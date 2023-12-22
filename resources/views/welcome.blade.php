@@ -173,7 +173,7 @@
                           <li><a href="404.html">404</a></li>
                         </ul>
                       </li>
-                      <li><a href="contact.html">Contact</a>
+                      <li><a href="/login">login</a>
                       </li>
                     </ul>
                   </div>
