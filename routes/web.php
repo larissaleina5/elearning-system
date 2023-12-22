@@ -1,6 +1,6 @@
 <?php
 use  App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomeController::class,'welcome']);
-
-Route::get('leina',function(){
-    return 'leina';
-});
+Route::get('/login',[LoginController::class,'login']);
