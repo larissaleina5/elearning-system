@@ -1,6 +1,7 @@
 <?php
 
-use App\Models\Lesson;
+use App\Models\Question;
+use App\Models\Quiz;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,14 +13,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::disableForeignKeyConstraints();
-        Schema::create('quizzes', function (Blueprint $table) {
+        Schema::create('quiz_questions', function (Blueprint $table) {
             $table->id();
-            $table->string('quiz_title');
-            $table->foreignIdFor(Lesson::class)
+            $table->foreignIdFor(Quiz::class)
             ->constrained()
-            ->restrictOnUpdate()
-            ->restrictOnDelete();
+            ->cascadeOnUpdate()
+            ->cascadeOnDelete();
+            $table->foreignIdFor(Question::class)
+            ->constrained()
+            ->cascadeOnUpdate()
+            ->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('quizzes');
+        Schema::dropIfExists('quiz_questions');
     }
 };

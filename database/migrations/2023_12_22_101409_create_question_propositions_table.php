@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\Course;
-use App\Models\User;
+use App\Models\Proposition;
+use App\Models\Quiz;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::disableForeignKeyConstraints();
-        Schema::create('payments', function (Blueprint $table) {
+        Schema::create('question_propositions', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class)
+            $table->foreignIdFor(Quiz::class)
             ->constrained()
-            ->restrictOnUpdate()
-            ->restrictOnDelete();
-            $table->foreignIdFor(Course::class)
+            ->cascadeOnUpdate()
+            ->cascadeOnDelete();
+            $table->foreignIdFor(Proposition::class)
             ->constrained()
-            ->restrictOnUpdate()
-            ->restrictOnDelete();
+            ->cascadeOnUpdate()
+            ->cascadeOnDelete();
+            $table->boolean('isGoodOrFalse');
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('payments');
+        Schema::dropIfExists('question_propositions');
     }
 };
