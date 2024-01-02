@@ -15,8 +15,8 @@
   <link rel="shortcut icon" href="assets/imgs/logo/favicon.png" type="image/x-icon">
 
   <!-- All CSS Files -->
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{asset("assets/css/all.min.css")}}">
+  <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="assets/css/meanmenu.min.css">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/magnifi.css">
@@ -121,7 +121,7 @@
     </div>
   </div>
   <!-- Cart area end -->
-  
+
 
 
   <!-- Header area start -->
