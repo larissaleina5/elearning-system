@@ -9,7 +9,7 @@
   <meta name="description" content="HTML5 Template">
 
   <!-- Site Title -->
-  <title>Dashboard</title>
+  <title>Accueil</title>
 
   <!-- Site Favicon -->
   <link rel="shortcut icon" href="{{asset('assets/imgs/logo/favicon.png')}}" type="image/x-icon">
