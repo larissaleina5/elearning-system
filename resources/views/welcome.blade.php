@@ -9,10 +9,10 @@
   <meta name="description" content="HTML5 Template">
 
   <!-- Site Title -->
-  <title>Home</title>
+  <title>Dashboard</title>
 
   <!-- Site Favicon -->
-  <link rel="shortcut icon" href="assets/imgs/logo/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="{{asset('assets/imgs/logo/favicon.png')}}" type="image/x-icon">
 
   <!-- All CSS Files -->
   <link rel="stylesheet" href="assets/css/all.min.css">
@@ -47,13 +47,13 @@
   <div class="offcanvas__area">
     <div class="offcanvas__inner">
       <div class="offcanvas__top">
-        <img src="assets/imgs/home-1/loko.png" alt="Logo" height="5" width="5">
+        <img src="{{asset('assets/imgs/home-1/loko.png')}}" alt="Logo" height="5" width="5">
         <button id="offcanvas_close"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div class="offcanvas__menu">
         <div class="offcanvas-menu">
           <ul>
-            <li><a href="index.html">Home</a>
+            <li><a href="index.html">Dashboard</a>
             </li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Service</a>
@@ -86,7 +86,7 @@
         <div class="cart__item">
           <div class="image">
             <a href="">
-              <img src="assets/imgs/home-1/rw-2.png" alt="Image">
+              <img src="assets/imgs/dashboard-1/rw-2.png" alt="Image">
             </a>
           </div>
           <div class="info">
@@ -100,7 +100,7 @@
         <div class="cart__item">
           <div class="image">
             <a href="">
-              <img src="assets/imgs/home-1/rw.png" alt="Image">
+              <img src="assets/imgs/dashboard-1/rw.png" alt="Image">
             </a>
           </div>
           <div class="info">
@@ -133,7 +133,7 @@
             <div class="header__left">
               <div class="header__logo">
                 <a href="">
-                  <img src="assets/imgs/home-1/loko.png" alt="Logo">
+                  <img src="{{asset('assets/imgs/home-1/loko.png')}}" alt="Logo">
                 </a>
               </div>
             </div>
@@ -142,9 +142,9 @@
                 <div class="header__menu">
                   <div class="main-menu-2">
                     <ul>
-                      <li class="has-dropdown"><a href="#">Home</a>
+                      <li class="has-dropdown"><a href="#">Dashboard</a>
                         <ul class="main-dropdown">
-                          <li><a href="index.html">Home</a></li>
+                          <li><a href="index.html">Dashboard</a></li>
                         </ul>
                       </li>
                       <li class="has-dropdown"><a href="#">courses</a>
@@ -173,7 +173,7 @@
                           <li><a href="404.html">404</a></li>
                         </ul>
                       </li>
-                      <li><a href="/login">login</a>
+                      <li><a href="{{route('login')}}">login</a>
                       </li>
                     </ul>
                   </div>
@@ -233,7 +233,7 @@
         <div class="row">
           <div class="col-lg-7">
             <div class="hero__content">
-              <h1 class="sec-subtitle" data-aos="fade-up" data-aos-delay="300"><img src="assets/imgs/home-2/work4.png"
+              <h1 class="sec-subtitle" data-aos="fade-up" data-aos-delay="300"><img src="{{asset('assets/imgs/home-2/work4.png')}}"
                   alt="" style="width:100px;">
                 The Leader in Online Learning
               </h1>
@@ -243,9 +243,9 @@
                 real-time partnerships.</p>
               <div class="btns">
                 <a href="about.html" class="btn-ractangle-2" data-aos="flip-left" data-aos-delay="600">Explore More <img
-                    src="assets/imgs/home-1/arrow.png" alt=""></a>
+                    src="assets/imgs/dashboard-1/arrow.png" alt=""></a>
                 <a href="about.html" class="btn-border" data-aos="flip-left" data-aos-delay="700">Explore More <img
-                    src="assets/imgs/home-1/arrow.png" alt=""></a>
+                    src="assets/imgs/dashboard-1/arrow.png" alt=""></a>
               </div>
             </div>
           </div>
@@ -264,7 +264,7 @@
         </div>
       </div>
 
-      <img src="assets/imgs/home-1/star.png" alt="star" class="star-1">
+      <img src="{{asset('assets/imgs/home-1/star.png')}}">
     </section>
     <!-- Hero area end  -->
 
@@ -277,7 +277,7 @@
             <div class="col-lg-4 col-md-6">
               <div class="achievement__item-2" data-aos="flip-up" data-aos-delay="300">
                 <div class="achievement__img-2">
-                  <img src="assets/imgs/home-1/achive-1.png" alt="Icon">
+                  <img src="{{asset('assets/imgs/home-1/achive-1.png')}}">
                 </div>
                 <div class="achievement__info-2">
                   <h2 class="achievement__number-2">Book Library & Store </h2>
@@ -289,7 +289,7 @@
             <div class="col-lg-4 col-md-6">
               <div class="achievement__item-2" data-aos="flip-up" data-aos-delay="400">
                 <div class="achievement__img-2">
-                  <img src="assets/imgs/home-1/achive-3.png" alt="Icon">
+                  <img src="{{asset('assets/imgs/home-1/achive-3.png')}}">
                 </div>
                 <div class="achievement__info-2">
                   <h2 class="achievement__number-2">10K+ Online Courses</h2>
@@ -300,7 +300,7 @@
             <div class="col-lg-4 col-md-6">
               <div class="achievement__item-2" data-aos="flip-up" data-aos-delay="500">
                 <div class="achievement__img-2">
-                  <img src="assets/imgs/home-1/achive-4.png" alt="Icon">
+                  <img src="{{asset('assets/imgs/home-1/achive-4.png')}}">
                 </div>
                 <div class="achievement__info-2">
                   <h2 class="achievement__number-2">Expert Instructor</h2>
@@ -328,19 +328,19 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="course__item-lg" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/imgs/home-2/work.png" alt="Image">
+              <img src="{{asset('assets/imgs/home-2/work.png')}}" alt="Image">
               <div class="course__content-lg">
                 <ul class="meta">
                   <li>
                     <a href="course.html" class="category">UI/UX Design</a>
                   </li>
-                  <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> 40+ Students</li>
+                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
                   <h2 class="course__title-lg">Advance Beginner's Goal & Managing <br> Online Course</h2>
                 </a>
                 <div class="course__author">
-                  <img src="assets/imgs/home-1/instructor.png" alt="Author Image">
+                  <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
                   <div>
                     <p class="text-white">Prof. Arber Plante</p>
                     <ul class="rating">
@@ -359,14 +359,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="course__item-2" data-aos="fade-up" data-aos-delay="400">
               <a href="course.html">
-                <img src="assets/imgs/home-2/cute.png" alt="Image">
+                <img src="assets/imgs/dashboard-2/cute.png" alt="Image">
               </a>
               <div class="course__content-2">
                 <ul class="meta">
                   <li>
                     <a href="course.html" class="category">UI/UX Design</a>
                   </li>
-                  <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> 40+ Students</li>
+                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
                   <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -380,7 +380,7 @@
                   <li><i class="fa-solid fa-star"></i></li>
                 </ul>
                 <div class="course__author">
-                  <img src="assets/imgs/home-1/instructor.png" alt="Author Image">
+                  <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
                   <div>
                     <p>Chapin Daigle</p>
                   </div>
@@ -391,14 +391,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="course__item-2" data-aos="fade-up" data-aos-delay="500">
               <a href="course.html">
-                <img src="assets/imgs/home-2/child2.png" alt="Image">
+                <img src="assets/imgs/dashboard-2/child2.png" alt="Image">
               </a>
               <div class="course__content-2">
                 <ul class="meta">
                   <li>
                     <a href="course.html" class="category">UI/UX Design</a>
                   </li>
-                  <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> 40+ Students</li>
+                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
                   <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -412,7 +412,7 @@
                   <li><i class="fa-solid fa-star"></i></li>
                 </ul>
                 <div class="course__author">
-                  <img src="assets/imgs/home-1/instructor.png" alt="Author Image">
+                  <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
                   <div>
                     <p>Chapin Daigle</p>
                   </div>
@@ -447,14 +447,14 @@
                   <div class="col-md-6">
                     <div class="course__item-2" data-aos="fade-up" data-aos-delay="400">
                       <a href="course.html">
-                        <img src="assets/imgs/home-2/work2.png" alt="Image">
+                        <img src="assets/imgs/dashboard-2/work2.png" alt="Image">
                       </a>
                       <div class="course__content-2">
                         <ul class="meta">
                           <li>
                             <a href="course.html" class="category">UI/UX Design</a>
                           </li>
-                          <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> 40+ Students</li>
+                          <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
                         </ul>
                         <a href="course.html">
                           <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -468,7 +468,7 @@
                           <li><i class="fa-solid fa-star"></i></li>
                         </ul>
                         <div class="course__author">
-                          <img src="assets/imgs/home-1/instructor.png" alt="Author Image">
+                          <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
                           <div>
                             <p>Guiadem Aisha</p>
                           </div>
@@ -479,14 +479,14 @@
                   <div class="col-md-6">
                     <div class="course__item-2" data-aos="fade-up" data-aos-delay="500">
                       <a href="course.html">
-                        <img src="assets/imgs/home-2/work5.png" alt="Image">
+                        <img src="assets/imgs/dashboard-2/work5.png" alt="Image">
                       </a>
                       <div class="course__content-2">
                         <ul class="meta">
                           <li>
                             <a href="course.html" class="category">UI/UX Design</a>
                           </li>
-                          <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> 40+ Students</li>
+                          <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
                         </ul>
                         <a href="course.html">
                           <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -500,7 +500,7 @@
                           <li><i class="fa-solid fa-star"></i></li>
                         </ul>
                         <div class="course__author">
-                          <img src="assets/imgs/home-1/instructor.png" alt="Author Image">
+                          <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
                           <div>
                             <p>Chapin Daigle</p>
                           </div>
@@ -539,7 +539,7 @@
         </div>
       </div>
 
-      <img src="assets/imgs/home-2/shape.png" alt="shape" class="shape">
+      <img src="assets/imgs/dashboard-2/shape.png" alt="shape" class="shape">
     </section>
     <!-- Register area end -->
 
@@ -560,10 +560,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="300">
                   <a href="course.html">
-                    <img src="assets/imgs/home-2/cat-1.jpg" alt="Image" class="image">
+                    <img src="assets/imgs/dashboard-2/cat-1.jpg" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/home-2/c1.png" alt="Icon">
+                    <img src="assets/imgs/dashboard-2/c1.png" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">Management</h3>
@@ -577,10 +577,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="400">
                   <a href="course.html">
-                    <img src="assets/imgs/home-2/cat-2.jpg" alt="Image" class="image">
+                    <img src="assets/imgs/dashboard-2/cat-2.jpg" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/home-2/c2.png" alt="Icon">
+                    <img src="assets/imgs/dashboard-2/c2.png" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">IT & Software</h3>
@@ -594,10 +594,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="500">
                   <a href="course.html">
-                    <img src="assets/imgs/home-2/cat-3.jpg" alt="Image" class="image">
+                    <img src="assets/imgs/dashboard-2/cat-3.jpg" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/home-2/c3.png" alt="Icon">
+                    <img src="assets/imgs/dashboard-2/c3.png" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">Web Development</h3>
@@ -611,10 +611,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="600">
                   <a href="course.html">
-                    <img src="assets/imgs/home-2/cat-4.jpg" alt="Image" class="image">
+                    <img src="assets/imgs/dashboard-2/cat-4.jpg" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/home-2/c4.png" alt="Icon">
+                    <img src="assets/imgs/dashboard-2/c4.png" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">HR Admin</h3>
@@ -645,7 +645,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="200">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/home-2/counter-1.png" alt="Icon">
+                  <img src="assets/imgs/dashboard-2/counter-1.png" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">50k+</h2>
@@ -656,7 +656,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="400">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/home-2/counter-2.png" alt="Icon">
+                  <img src="assets/imgs/dashboard-2/counter-2.png" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">30K+</h2>
@@ -667,7 +667,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="500">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/home-2/counter-3.png" alt="Icon">
+                  <img src="assets/imgs/dashboard-2/counter-3.png" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">63+</h2>
@@ -678,7 +678,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="600">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/home-2/counter-4.png" alt="Icon">
+                  <img src="assets/imgs/dashboard-2/counter-4.png" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">140+</h2>
@@ -707,7 +707,7 @@
           <div class="event__list-2">
             <div class="event__item-2" data-aos="fade-up" data-aos-delay="300">
               <div class="event__img-2">
-                <img src="assets/imgs/home-2/bu6.png" alt="Image" style="border-radius:50%;width:200px;height:200px;object-fit:cover;" >
+                <img src="assets/imgs/dashboard-2/bu6.png" alt="Image" style="border-radius:50%;width:200px;height:200px;object-fit:cover;" >
                 <div class="date">
                   <p>27 <span>April, 2023</span></p>
                 </div>
@@ -717,8 +717,8 @@
                   <h3 class="event__title-2">Applying Natural Online Freelance <br> & Society</h3>
                 </a>
                 <ul class="course__meta">
-                  <li><img src="assets/imgs/home-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
-                  <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> Beginner</li>
+                  <li><img src="assets/imgs/dashboard-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
+                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> Beginner</li>
                 </ul>
                 <div class="event__link">
                   <a href="about.html">
@@ -730,7 +730,7 @@
             </div>
             <div class="event__item-2" data-aos="fade-up" data-aos-delay="400">
               <div class="event__img-2">
-                <img src="assets/imgs/home-2/event-2.png" alt="Image">
+                <img src="assets/imgs/dashboard-2/event-2.png" alt="Image">
                 <div class="date">
                   <p>27 <span>April, 2023</span></p>
                 </div>
@@ -740,8 +740,8 @@
                   <h3 class="event__title-2">Customize your own site search <br> Feature without Coding</h3>
                 </a>
                 <ul class="course__meta">
-                  <li><img src="assets/imgs/home-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
-                  <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> Beginner</li>
+                  <li><img src="assets/imgs/dashboard-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
+                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> Beginner</li>
                 </ul>
                 <div class="event__link">
                   <a href="about.html">
@@ -753,7 +753,7 @@
             </div>
             <div class="event__item-2" data-aos="fade-up" data-aos-delay="500">
               <div class="event__img-2">
-                <img src="assets/imgs/home-2/event-3.png" alt="Image">
+                <img src="assets/imgs/dashboard-2/event-3.png" alt="Image">
                 <div class="date">
                   <p>27 <span>April, 2023</span></p>
                 </div>
@@ -763,8 +763,8 @@
                   <h3 class="event__title-2">Applying Natural Online Freelance <br> & Society</h3>
                 </a>
                 <ul class="course__meta">
-                  <li><img src="assets/imgs/home-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
-                  <li><img src="assets/imgs/home-1/student.png" alt="Student Type"> Beginner</li>
+                  <li><img src="assets/imgs/dashboard-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
+                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> Beginner</li>
                 </ul>
                 <div class="event__link">
                   <a href="about.html">
@@ -797,7 +797,7 @@
           </div>
           <div class="col-md-6">
             <div class="instructor__category-2" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/imgs/home-2/arrow.png" alt="shape" class="shape">
+              <img src="assets/imgs/dashboard-2/arrow.png" alt="shape" class="shape">
               <select name="instructor" id="instructor_category">
                 <option value="1">Web Development</option>
                 <option value="2">Web Development</option>
@@ -816,7 +816,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="400">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/home-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -836,7 +836,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="500">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/home-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -856,7 +856,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="600">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/home-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -876,7 +876,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="700">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/home-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -912,11 +912,11 @@
           <div class="col-lg-6">
             <div class="testimonial__left-2" data-aos="fade-right" data-aos-delay="300">
               <div class="quote">
-                <img src="assets/imgs/home-2/quote.png" alt="Quote">
+                <img src="assets/imgs/dashboard-2/quote.png" alt="Quote">
               </div>
-              <img src="assets/imgs/home-2/dad.png" alt="Image" class="img-1" style="border-radius:50%;width:400px;height:400px;object-fit:cover;">
-              <img src="assets/imgs/home-2/testimonial-4.png" alt="Image" class="img-2">
-              <img src="assets/imgs/home-2/testimonial-3.png" alt="Image" class="img-3">
+              <img src="assets/imgs/dashboard-2/dad.png" alt="Image" class="img-1" style="border-radius:50%;width:400px;height:400px;object-fit:cover;">
+              <img src="assets/imgs/dashboard-2/testimonial-4.png" alt="Image" class="img-2">
+              <img src="assets/imgs/dashboard-2/testimonial-3.png" alt="Image" class="img-3">
             </div>
           </div>
           <div class="col-lg-6">
@@ -929,8 +929,8 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="testimonial__slide-2">
-                      <img src="assets/imgs/home-2/testimonial-1.png" alt="Image" class="img">
-                      <img class="rating" src="assets/imgs/home-2/rating.png" alt="Star">
+                      <img src="assets/imgs/dashboard-2/testimonial-1.png" alt="Image" class="img">
+                      <img class="rating" src="assets/imgs/dashboard-2/rating.png" alt="Star">
                       <p class="text">“Sam is somebody you need as a steward of your brand. He’s able to craft
                         compelling brand
                         narratives that bring a company’s vision to life We care about safety big time — and so do your
@@ -940,8 +940,8 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonial__slide-2">
-                      <img src="assets/imgs/home-2/testimonial-1.png" alt="Image" class="img">
-                      <img class="rating" src="assets/imgs/home-2/rating.png" alt="Star">
+                      <img src="assets/imgs/dashboard-2/testimonial-1.png" alt="Image" class="img">
+                      <img class="rating" src="assets/imgs/dashboard-2/rating.png" alt="Star">
                       <p class="text">“Sam is somebody you need as a steward of your brand. He’s able to craft
                         compelling brand
                         narratives that bring a company’s vision to life We care about safety big time — and so do your
@@ -952,7 +952,7 @@
                 </div>
               </div>
 
-              <img src="assets/imgs/home-2/shape-2.png" alt="Shape" class="shape">
+              <img src="assets/imgs/dashboard-2/shape-2.png" alt="Shape" class="shape">
             </div>
           </div>
         </div>
@@ -968,28 +968,28 @@
             <div class="swiper brand__slider-2" data-aos="fade-up" data-aos-delay="300">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-1.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-1.png" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-2.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-2.png" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-3.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-3.png" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-4.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-4.png" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-5.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-5.png" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-1.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-1.png" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-2.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-2.png" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/home-2/brand-4.png" alt="Logo">
+                  <img src="assets/imgs/dashboard-2/brand-4.png" alt="Logo">
                 </div>
               </div>
             </div>
@@ -1008,7 +1008,7 @@
         <div class="row">
           <div class="col-lg-7 col-md-6">
             <div class="title-wrapper pb-5" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="sec-subtitle"><img src="assets/imgs/home-1/dot.png" alt="dot"> blog</h2>
+              <h2 class="sec-subtitle"><img src="assets/imgs/dashboard-1/dot.png" alt="dot"> blog</h2>
               <h3 class="sec-title">Latest from the Blog</h3>
             </div>
           </div>
@@ -1023,7 +1023,7 @@
           <div class="col-lg-4 col-md-6">
             <article class="blog__item" data-aos="fade-up" data-aos-delay="400">
               <div class="blog__img-2">
-                <img src="assets/imgs/home-2/work7.png" alt="Thumbnail" class="image">
+                <img src="assets/imgs/dashboard-2/work7.png" alt="Thumbnail" class="image">
                 <a href="blog-details.html" class="category">Education</a>
               </div>
               <div class="blog__content">
@@ -1040,7 +1040,7 @@
           <div class="col-lg-4 col-md-6">
             <article class="blog__item" data-aos="fade-up" data-aos-delay="500">
               <div class="blog__img-2">
-                <img src="assets/imgs/home-2/blog-2.jpg" alt="Thumbnail" class="image">
+                <img src="assets/imgs/dashboard-2/blog-2.jpg" alt="Thumbnail" class="image">
                 <a href="blog-details.html" class="category">Education</a>
               </div>
               <div class="blog__content">
@@ -1057,7 +1057,7 @@
           <div class="col-lg-4 col-md-6">
             <article class="blog__item" data-aos="fade-up" data-aos-delay="600">
               <div class="blog__img-2">
-                <img src="assets/imgs/home-2/work6.webp" alt="Thumbnail" class="image">
+                <img src="assets/imgs/dashboard-2/work6.webp" alt="Thumbnail" class="image">
                 <a href="blog-details.html" class="category">Education</a>
               </div>
               <div class="blog__content">
@@ -1126,7 +1126,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-8">
             <div class="footer__logo-2">
-              <img src="assets/imgs/home-1/loko.png" alt="Logo">
+              <img src="assets/imgs/dashboard-1/loko.png" alt="Logo">
               <p>SSL for your site is a no-brainer best practice. Not only lMS Website site.</p>
               <div class="newsletter__form-2">
                 <input type="email" name="email" placeholder="Enter email Address">
@@ -1168,7 +1168,7 @@
               <div class="footer__post">
                 <div class="image">
                   <a href="blog-details.html">
-                    <img src="assets/imgs/home-2/bu4.png" alt="Image">
+                    <img src="assets/imgs/dashboard-2/bu4.png" alt="Image">
                   </a>
                 </div>
                 <div class="info">
@@ -1181,7 +1181,7 @@
               <div class="footer__post">
                 <div class="image">
                   <a href="blog-details.html">
-                    <img src="assets/imgs/home-2/bu3.png" alt="Image">
+                    <img src="assets/imgs/dashboard-2/bu3.png" alt="Image">
                   </a>
                 </div>
                 <div class="info">
