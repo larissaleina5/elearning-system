@@ -17,12 +17,12 @@
   <!-- All CSS Files -->
   <link rel="stylesheet" href="{{asset("assets/css/all.min.css")}}">
   <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/magnifi.css">
+  <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/magnifi.css') }}">
   <link rel="stylesheet" href="assets/css/aos.css">
-  <link rel="stylesheet" href="assets/css/master.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ asset('assets/css/master.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 
 </head>
