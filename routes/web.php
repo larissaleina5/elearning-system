@@ -39,11 +39,12 @@ Route::get('/',[HomeController::class,'welcome']);
 
 Route::post('/login2',[LoginController::class,'store'])->name('store-in');
 Route::get('/teacher',[TeacherController::class,'teacher']);
-Route::get('/students',[StudentController::class,'student'])->name('students');
+Route::get('/students',[StudentController::class,'list'])->name('students');
 Route::get('/dasboard',[DashboardController::class,'dashboard']);
-Route::get('/enlists',[EnliststudentController::class,'enlist']);
+Route::get('/add/student',[StudentController::class,'addStudent'])->name('add-student');
 Route::get('/employtea',[EmployteaController::class,'add']);
 Route::get('/studetails',[StudetailsController::class,'studetails']);
 Route::get('/teadetail',[TeadetailController::class,'teadetail']);
+Route::post('/add/student',[StudentController::class,'storeStudent'])->name('store-student');
 
 require __DIR__.'/auth.php';
