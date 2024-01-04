@@ -8,7 +8,10 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function list(){
-        return view('students.list');
+        $students=User::where('role_id',2)->get();
+        //return $students;
+
+        return view('students.list',compact('students'));
     }
 
     public function addStudent(){

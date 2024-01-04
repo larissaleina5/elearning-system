@@ -46,5 +46,7 @@ Route::get('/employtea',[EmployteaController::class,'add']);
 Route::get('/studetails',[StudetailsController::class,'studetails']);
 Route::get('/teadetail',[TeadetailController::class,'teadetail']);
 Route::post('/add/student',[StudentController::class,'storeStudent'])->name('store-student');
+Route::get('/add/teacher',[TeacherController::class,'addTeacher'])->name('add-teacher');
+Route::post('/add/teacher',[TeacherController::class,'storeTeacher'])->name('store-teacher');
 
 require __DIR__.'/auth.php';
