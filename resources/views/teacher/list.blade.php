@@ -1530,7 +1530,7 @@
                                             <tbody>
 
 
-                                                @foreach ($teacher as $teacher)
+                                                @foreach ($teachers as $teacher)
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox me-0 align-self-center">
@@ -1542,7 +1542,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="trans-list">
-                                                            <img src="./images/trans/5.jpg" alt="" class="avatar me-3">
+                                                            <img src="{{ asset('assets/images/trans/5.jpg') }}" alt="" class="avatar me-3">
                                                             <h4>{{ $teacher->name }}</h4>
                                                         </div>
                                                     </td>

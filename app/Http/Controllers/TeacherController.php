@@ -10,9 +10,9 @@ class TeacherController extends Controller
     //public function teacher(){
       //  return view('All');
     //}
-    public function employ(){
-        $teacher=User::where('role_id',3)->get();
-        return view('teacher.create',compact('teacher'));
+    public function index(){
+        $teachers=User::where('role_id',3)->get();
+        return view('teacher.list',compact('teachers'));
     }
 public function addTeacher(){
     return view('teacher.create');

@@ -38,7 +38,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/',[HomeController::class,'welcome']);
 
 Route::post('/login2',[LoginController::class,'store'])->name('store-in');
-Route::get('/teacher',[TeacherController::class,'teacher']);
+Route::get('/teachers',[TeacherController::class,'index']);
 Route::get('/students',[StudentController::class,'list'])->name('students');
 Route::get('/dasboard',[DashboardController::class,'dashboard']);
 Route::get('/add/student',[StudentController::class,'addStudent'])->name('add-student');
