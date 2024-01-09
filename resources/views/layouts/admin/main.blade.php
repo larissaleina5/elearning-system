@@ -21,7 +21,12 @@
         <link rel="stylesheet" href="{{ asset('char') }}">
         <link href="{{asset('public/assets/vendor/wow-master/css/libs/animate.css')}}" rel="stylesheet">
         <link href="{{asset('public/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}" rel="stylesheet">
+        <link href="{{asset('public/assets/vendor/bootstrap-select-country/css/bootstrap-select-country.min.css')}}" rel="stylesheet">
+        <link href="{{ asset('public/assets/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ asset('public/assets/vendor/datepicker/css/bootstrap-datepicker.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('public/assets/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('public/assets/css/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css">
+
         <!-- Style css -->
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
         <!-- Style css -->
@@ -65,7 +70,7 @@
             <!--**********************************
             Sidebar start
         ***********************************-->
-           @include('layouts.admin.sidebar')
+        @include('layouts.admin.sidebar')
             <!--**********************************
             Sidebar end
         ***********************************-->
@@ -146,9 +151,19 @@
         <script src="{{asset('public/assets/vendor/global/global.min.js')}}"></script>
         <script src="{{asset('public/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
         <!--datatables-->
+        <script src="{{ asset('public/assets/vendor/chart.js/Chart.bundle.min.js') }}"></script>
+        <script src="{{ asset('public/assets/vendor/apexchart/apexchart.js') }}"></script>
+        <script src="{{ asset('public/assets/vendor/peity/jquery.peity.min.js') }}"></script>
+        <script src="{{ asset('public/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
+        <script src="{{ asset('public/assets/vendor/swiper/js/swiper-bundle.min.js') }}"></script>
         <script src="{{asset('public/assets/vendor/datatables/js/jquery.dataTables.min.js')}}"></script>
         <script src="{{asset('public/assets/js/plugins-init/datatables.init.js')}}"></script>
+        <script src="{{ asset('public/assets/js/dashboard/dashboard-1.js') }}"></script>
+        <script src="{{ asset('assets/vendor/datepicker/js/bootstrap-datepicker.min.js') }}"></script>
         <!-- Dashboard 1 -->
+        <script src="{{ asset('public/assets/vendor/wow-master/dist/wow.min.js') }}"></script>
+    <script src="{{ asset('public/assets/vendor/bootstrap-datetimepicker/js/moment.js') }}"></script>
+    <script src="{{ asset('public/assets/vendor/datepicker/js/bootstrap-datepicker.min.js') }}"></script>
         <script src="{{asset('public/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}"></script>
         <script src="{{asset('public/assets/js/custom.min.js')}}"></script>
         <script src="{{asset('public/assets/js/dlabnav-init.js')}}"></script>

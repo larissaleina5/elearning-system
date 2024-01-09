@@ -3,9 +3,6 @@
 List of Sudents
 @endsection
 
-@section('subtitle')
-S
-@endsection
 @section('content')
 <div class="content-body">
     <!-- row -->
