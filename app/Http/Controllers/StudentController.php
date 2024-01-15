@@ -20,6 +20,11 @@ class StudentController extends Controller
             return view('students.create');
 
     }
+
+    public function show($id){
+        $user=User::find($id);
+        return $user;
+    }
     public function storeStudent(StudentRequest  $request){
         //first step to create into a database in laravel
 //         $user=User::create([

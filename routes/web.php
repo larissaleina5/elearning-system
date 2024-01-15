@@ -11,6 +11,7 @@ use App\Http\Controllers\EmployteaController;
 use App\Http\Controllers\TeadetailController;
 use App\Http\Controllers\StudetailsController;
 use App\Http\Controllers\EnliststudentController;
+use App\Http\Requests\StudentRequest;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ use App\Http\Controllers\EnliststudentController;
 */
 
 
+Route::get('user/{id}',[StudentController::class,'show']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

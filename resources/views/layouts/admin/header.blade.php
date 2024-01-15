@@ -359,8 +359,8 @@
                                                 <img src="images/user.jpg" class="ms-0" alt="">
                                             </li>
                                             <li class="ms-2">
-                                                <h4 class="mb-0">Nella Vita</h4>
-                                                <span>Admin</span>
+                                                <h4 class="mb-0">{{ auth()->user()->name }}</h4>
+                                                <span>{{ auth()->user()->email }}</span>
                                             </li>
                                         </ul>
                                     </div>
