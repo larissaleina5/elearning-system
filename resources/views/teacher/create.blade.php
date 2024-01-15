@@ -38,23 +38,35 @@ Create Teacher
                                             <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label text-primary"> Name<span class="required">*</span></label>
                                         <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="James">
+                                        @error('name')
+                                        <p class="text-danger">{{ $message }}</p>
+                                @enderror
                                             </div>
 
 
                                             <div class="mb-3">
                                             <label for="exampleFormControlInput3" class="form-label text-primary">Email<span class="required">*</span></label>
                                             <input type="email" name="email" class="form-control" id="exampleFormControlInput3" placeholder="hello@example.com">
+                                            @error('email')
+                                            <p class="text-danger">{{ $message }}</p>
+                                    @enderror
                                             </div>
 
 
                                                 <div class="mb-3">
                                                     <label for="exampleFormControlInput3" class="form-label text-primary">Password<span class="required">*</span></label>
                                                     <input type="password"  name="password"class="form-control" id="UserController" placeholder="Password">
+                                                    @error('password')
+                                                    <p class="text-danger">{{ $message }}</p>
+                                            @enderror
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="exampleFormControlInput6" class="form-label text-primary">Phone Number<span class="required">*</span></label>
                                                         <input type="number" name="phone"class="form-control" id="exampleFormControlInput6" placeholder="+123456789">
+                                                        @error('phone')
+                                                        <p class="text-danger">{{ $message }}</p>
+                                                @enderror
                                                         </div>
 
                                             </div>

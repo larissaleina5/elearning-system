@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\TeacherRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,7 @@ class TeacherController extends Controller
 public function addTeacher(){
     return view('teacher.create');
 }
-public function storeTeacher(Request  $request){
+public function storeTeacher(TeacherRequest  $request){
 
     $user=User::create([
 'name'=>$request ->name,

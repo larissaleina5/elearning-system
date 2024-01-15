@@ -406,7 +406,7 @@
                                         </a>
                                     </div>
                                     <div class="card-footer text-center p-3">
-                                        <a href="page-login.html" class="dropdown-item ai-icon btn btn-primary light">
+                                        <a  onclick="event.preventDefault();document.getElementById('logout-form').submit()" class="dropdown-item ai-icon btn btn-primary light">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                                 <polyline points="16 17 21 12 16 7"></polyline>
@@ -414,6 +414,12 @@
                                             </svg>
                                             <span class="ms-2 text-primary">Logout </span>
                                         </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="post">
+                                            @csrf
+
+
+                                        </form>
                                     </div>
                                 </div>
                             </div>

@@ -33,12 +33,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+    Route::get('test',function(){
+        return auth()->user();
+    });
 
-Route::get('/',[HomeController::class,'welcome']);
-
-Route::post('/login2',[LoginController::class,'store'])->name('store-in');
-Route::get('/teachers',[TeacherController::class,'index'])->name('teachers');
+    Route::get('/teachers',[TeacherController::class,'index'])->name('teachers');
 Route::get('/students',[StudentController::class,'list'])->name('students');
 Route::get('/dasboard',[DashboardController::class,'dashboard']);
 Route::get('/add/student',[StudentController::class,'addStudent'])->name('add-student');
@@ -48,5 +47,12 @@ Route::get('/teadetail',[TeadetailController::class,'teadetail']);
 Route::post('/add/student',[StudentController::class,'storeStudent'])->name('store-student');
 Route::get('/add/teacher',[TeacherController::class,'addTeacher'])->name('add-teacher');
 Route::post('/add/teacher',[TeacherController::class,'storeTeacher'])->name('store-teacher');
+});
+
+Route::get('/',[HomeController::class,'welcome']);
+
+
+Route::post('/login2',[LoginController::class,'store'])->name('store-in');
+
 
 require __DIR__.'/auth.php';
