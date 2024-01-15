@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StudentRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,7 @@ class StudentController extends Controller
             return view('students.create');
 
     }
-    public function storeStudent(Request  $request){
+    public function storeStudent(StudentRequest  $request){
         //first step to create into a database in laravel
 //         $user=User::create([
 // 'name'=>$request ->name,
