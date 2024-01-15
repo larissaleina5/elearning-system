@@ -1,6 +1,6 @@
 @extends('layouts.admin.main')
 @section('title')
-dashbouard
+dashboard
 @endsection
 @section('content')
 <div class="content-body">

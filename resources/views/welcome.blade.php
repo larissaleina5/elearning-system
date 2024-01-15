@@ -359,7 +359,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="course__item-2" data-aos="fade-up" data-aos-delay="400">
               <a href="course.html">
-                <img src="assets/imgs/dashboard-2/cute.png" alt="Image">
+                <img src="{{ asset('assets/imgs/home-2/cute.png') }}" alt="Image">
               </a>
               <div class="course__content-2">
                 <ul class="meta">
@@ -391,14 +391,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="course__item-2" data-aos="fade-up" data-aos-delay="500">
               <a href="course.html">
-                <img src="assets/imgs/dashboard-2/child2.png" alt="Image">
+                <img src="{{ asset('assets/imgs/home-2/child2.png') }}" alt="Image">
               </a>
               <div class="course__content-2">
                 <ul class="meta">
                   <li>
                     <a href="course.html" class="category">UI/UX Design</a>
                   </li>
-                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
                   <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -453,8 +453,8 @@
                         <ul class="meta">
                           <li>
                             <a href="course.html" class="category">UI/UX Design</a>
-                          </li>
-                          <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
+                </li>
+                          <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                         </ul>
                         <a href="course.html">
                           <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -468,7 +468,7 @@
                           <li><i class="fa-solid fa-star"></i></li>
                         </ul>
                         <div class="course__author">
-                          <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
+                          <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
                           <div>
                             <p>Guiadem Aisha</p>
                           </div>
@@ -486,7 +486,7 @@
                           <li>
                             <a href="course.html" class="category">UI/UX Design</a>
                           </li>
-                          <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
+                          <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                         </ul>
                         <a href="course.html">
                           <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -500,7 +500,7 @@
                           <li><i class="fa-solid fa-star"></i></li>
                         </ul>
                         <div class="course__author">
-                          <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
+                          <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
                           <div>
                             <p>Chapin Daigle</p>
                           </div>
@@ -539,7 +539,7 @@
         </div>
       </div>
 
-      <img src="assets/imgs/dashboard-2/shape.png" alt="shape" class="shape">
+      <img src="{{ asset('assets/imgs/home-2/shape.png') }}" alt="shape" class="shape">
     </section>
     <!-- Register area end -->
 
@@ -560,10 +560,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="300">
                   <a href="course.html">
-                    <img src="assets/imgs/dashboard-2/cat-1.jpg" alt="Image" class="image">
+                    <img src="{{ asset('assets/imgs/home-2/cat-1.jpg') }}" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/dashboard-2/c1.png" alt="Icon">
+                    <img src="{{ asset('assets/imgs/home-2/c1.png') }}" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">Management</h3>
@@ -577,10 +577,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="400">
                   <a href="course.html">
-                    <img src="assets/imgs/dashboard-2/cat-2.jpg" alt="Image" class="image">
+                    <img src="{{ asset('assets/imgs/home-2/cat-2.jpg') }}" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/dashboard-2/c2.png" alt="Icon">
+                    <img src="{{ asset('assets/imgs/home-2/c2.png') }}" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">IT & Software</h3>
@@ -594,10 +594,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="500">
                   <a href="course.html">
-                    <img src="assets/imgs/dashboard-2/cat-3.jpg" alt="Image" class="image">
+                    <img src="{{ asset('assets/imgs/home-2/cat-3.jpg') }}" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/dashboard-2/c3.png" alt="Icon">
+                    <img src="{{ asset('assets/imgs/home-2/c3.png') }}" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">Web Development</h3>
@@ -611,10 +611,10 @@
               <div class="swiper-slide">
                 <div class="category__item" data-aos="fade-up" data-aos-delay="600">
                   <a href="course.html">
-                    <img src="assets/imgs/dashboard-2/cat-4.jpg" alt="Image" class="image">
+                    <img src="{{ asset('assets/imgs/home-2/cat-4.jpg') }}" alt="Image" class="image">
                   </a>
                   <div class="icon">
-                    <img src="assets/imgs/dashboard-2/c4.png" alt="Icon">
+                    <img src="{{ asset('assets/imgs/home-2/c4.png') }}" alt="Icon">
                   </div>
                   <a href="course.html">
                     <h3 class="category__title">HR Admin</h3>
@@ -645,7 +645,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="200">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/dashboard-2/counter-1.png" alt="Icon">
+                  <img src="{{ asset('assets/imgs/home-2/counter-1.png') }}" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">50k+</h2>
@@ -656,7 +656,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="400">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/dashboard-2/counter-2.png" alt="Icon">
+                  <img src="{{ asset('assets/imgs/home-2/counter-2.png') }}" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">30K+</h2>
@@ -667,7 +667,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="500">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/dashboard-2/counter-3.png" alt="Icon">
+                  <img src="{{ asset('assets/imgs/home-2/counter-3.png') }}" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">63+</h2>
@@ -678,7 +678,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="counter__item-2" data-aos="fade-up" data-aos-delay="600">
                 <div class="counter__img-2">
-                  <img src="assets/imgs/dashboard-2/counter-4.png" alt="Icon">
+                  <img src="{{ asset('assets/imgs/home-2/counter-4.png') }}" alt="Icon">
                 </div>
                 <div class="counter__info-2">
                   <h2 class="counter__number-2 counter_medium">140+</h2>
@@ -707,7 +707,7 @@
           <div class="event__list-2">
             <div class="event__item-2" data-aos="fade-up" data-aos-delay="300">
               <div class="event__img-2">
-                <img src="assets/imgs/dashboard-2/bu6.png" alt="Image" style="border-radius:50%;width:200px;height:200px;object-fit:cover;" >
+                <img src="{{ asset('assets/imgs/home-2/bu6.png') }}" alt="Image" style="border-radius:50%;width:200px;height:200px;object-fit:cover;" >
                 <div class="date">
                   <p>27 <span>April, 2023</span></p>
                 </div>
@@ -717,8 +717,8 @@
                   <h3 class="event__title-2">Applying Natural Online Freelance <br> & Society</h3>
                 </a>
                 <ul class="course__meta">
-                  <li><img src="assets/imgs/dashboard-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
-                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> Beginner</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/alarm.png') }}" alt="Total Time"> 4h 30m 15s</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> Beginner</li>
                 </ul>
                 <div class="event__link">
                   <a href="about.html">
@@ -730,7 +730,7 @@
             </div>
             <div class="event__item-2" data-aos="fade-up" data-aos-delay="400">
               <div class="event__img-2">
-                <img src="assets/imgs/dashboard-2/event-2.png" alt="Image">
+                <img src="{{ asset('assets/imgs/home-2/event-2.png') }}" alt="Image">
                 <div class="date">
                   <p>27 <span>April, 2023</span></p>
                 </div>
@@ -740,8 +740,8 @@
                   <h3 class="event__title-2">Customize your own site search <br> Feature without Coding</h3>
                 </a>
                 <ul class="course__meta">
-                  <li><img src="assets/imgs/dashboard-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
-                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> Beginner</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/alarm.png') }}" alt="Total Time"> 4h 30m 15s</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> Beginner</li>
                 </ul>
                 <div class="event__link">
                   <a href="about.html">
