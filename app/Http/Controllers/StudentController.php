@@ -46,4 +46,7 @@ class StudentController extends Controller
 
         return $user;
     }
+    public function update(Request $request,$id){
+        return $id;
+    }
 }

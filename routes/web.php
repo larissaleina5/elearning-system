@@ -41,6 +41,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/teachers',[TeacherController::class,'index'])->name('teachers');
 Route::get('/students',[StudentController::class,'list'])->name('students');
+Route::put('/students/{id}','StudentController@update');
 Route::get('/dasboard',[DashboardController::class,'dashboard']);
 Route::get('/add/student',[StudentController::class,'addStudent'])->name('add-student');
 Route::get('/employtea',[EmployteaController::class,'add']);

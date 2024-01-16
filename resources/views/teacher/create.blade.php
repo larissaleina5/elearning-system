@@ -2,7 +2,6 @@
 @section('title')
 Create Teacher
 @endsection
-
 @section('content')
 
 <div class="content-body">

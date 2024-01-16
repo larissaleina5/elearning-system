@@ -86,7 +86,7 @@
         <div class="cart__item">
           <div class="image">
             <a href="">
-              <img src="assets/imgs/dashboard-1/rw-2.png" alt="Image">
+              <img src="{{ asset('assets/imgs/home-1/rw-2.png') }}" alt="Image">
             </a>
           </div>
           <div class="info">
@@ -100,7 +100,7 @@
         <div class="cart__item">
           <div class="image">
             <a href="">
-              <img src="assets/imgs/dashboard-1/rw.png" alt="Image">
+              <img src="{{ asset('assets/imgs/home-1/rw.png') }}" alt="Image">
             </a>
           </div>
           <div class="info">
@@ -243,9 +243,9 @@
                 real-time partnerships.</p>
               <div class="btns">
                 <a href="about.html" class="btn-ractangle-2" data-aos="flip-left" data-aos-delay="600">Explore More <img
-                    src="assets/imgs/dashboard-1/arrow.png" alt=""></a>
+                    src="{{ asset('assets/imgs/home-1/arrow.png') }}" alt=""></a>
                 <a href="about.html" class="btn-border" data-aos="flip-left" data-aos-delay="700">Explore More <img
-                    src="assets/imgs/dashboard-1/arrow.png" alt=""></a>
+                    src="{{ asset('assets/imgs/home-1/arrow.png') }}" alt=""></a>
               </div>
             </div>
           </div>
@@ -334,13 +334,13 @@
                   <li>
                     <a href="course.html" class="category">UI/UX Design</a>
                   </li>
-                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
                   <h2 class="course__title-lg">Advance Beginner's Goal & Managing <br> Online Course</h2>
                 </a>
                 <div class="course__author">
-                  <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
+                  <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
                   <div>
                     <p class="text-white">Prof. Arber Plante</p>
                     <ul class="rating">
@@ -366,7 +366,7 @@
                   <li>
                     <a href="course.html" class="category">UI/UX Design</a>
                   </li>
-                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> 40+ Students</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
                   <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
@@ -380,7 +380,7 @@
                   <li><i class="fa-solid fa-star"></i></li>
                 </ul>
                 <div class="course__author">
-                  <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
+                  <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
                   <div>
                     <p>Chapin Daigle</p>
                   </div>
@@ -412,7 +412,7 @@
                   <li><i class="fa-solid fa-star"></i></li>
                 </ul>
                 <div class="course__author">
-                  <img src="assets/imgs/dashboard-1/instructor.png" alt="Author Image">
+                  <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
                   <div>
                     <p>Chapin Daigle</p>
                   </div>
@@ -447,7 +447,7 @@
                   <div class="col-md-6">
                     <div class="course__item-2" data-aos="fade-up" data-aos-delay="400">
                       <a href="course.html">
-                        <img src="assets/imgs/dashboard-2/work2.png" alt="Image">
+                        <img src="{{ asset('assets/imgs/home-2/work2.png') }}" alt="Image">
                       </a>
                       <div class="course__content-2">
                         <ul class="meta">
@@ -479,7 +479,7 @@
                   <div class="col-md-6">
                     <div class="course__item-2" data-aos="fade-up" data-aos-delay="500">
                       <a href="course.html">
-                        <img src="assets/imgs/dashboard-2/work5.png" alt="Image">
+                        <img src="{{ asset('assets/imgs/home-2/work5.png') }}" alt="Image">
                       </a>
                       <div class="course__content-2">
                         <ul class="meta">
@@ -753,7 +753,7 @@
             </div>
             <div class="event__item-2" data-aos="fade-up" data-aos-delay="500">
               <div class="event__img-2">
-                <img src="assets/imgs/dashboard-2/event-3.png" alt="Image">
+                <img src="{{ asset('assets/imgs/home-2/event-3.png') }}" alt="Image">
                 <div class="date">
                   <p>27 <span>April, 2023</span></p>
                 </div>
@@ -763,8 +763,8 @@
                   <h3 class="event__title-2">Applying Natural Online Freelance <br> & Society</h3>
                 </a>
                 <ul class="course__meta">
-                  <li><img src="assets/imgs/dashboard-1/alarm.png" alt="Total Time"> 4h 30m 15s</li>
-                  <li><img src="assets/imgs/dashboard-1/student.png" alt="Student Type"> Beginner</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/alarm.png') }}" alt="Total Time"> 4h 30m 15s</li>
+                  <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> Beginner</li>
                 </ul>
                 <div class="event__link">
                   <a href="about.html">
@@ -797,7 +797,7 @@
           </div>
           <div class="col-md-6">
             <div class="instructor__category-2" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/imgs/dashboard-2/arrow.png" alt="shape" class="shape">
+              <img src="{{ asset('assets/imgs/home-1/arrow.png') }}" alt="shape" class="shape">
               <select name="instructor" id="instructor_category">
                 <option value="1">Web Development</option>
                 <option value="2">Web Development</option>
@@ -816,7 +816,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="400">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="{{ asset('assets/imgs/home-2/bu.png') }}" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -836,7 +836,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="500">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="{{ asset('assets/imgs/home-2/bu.png') }}" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -856,7 +856,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="600">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="{{ asset('assets/imgs/home-2/bu.png') }}" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -876,7 +876,7 @@
                   <div class="swiper-slide">
                     <div class="instructor__item-2" data-aos="fade-up" data-aos-delay="700">
                       <div class="instructor__img-2">
-                        <a href="team-details.html"><img src="assets/imgs/dashboard-2/bu.png" alt="Image"></a>
+                        <a href="team-details.html"><img src="{{ asset('assets/imgs/home-2/bu.png') }}" alt="Image"></a>
                         <div class="instructor__social-2">
                           <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -912,16 +912,16 @@
           <div class="col-lg-6">
             <div class="testimonial__left-2" data-aos="fade-right" data-aos-delay="300">
               <div class="quote">
-                <img src="assets/imgs/dashboard-2/quote.png" alt="Quote">
+                <img src="{{ asset('assets/imgs/home-2/quote.png') }}" alt="Quote">
               </div>
-              <img src="assets/imgs/dashboard-2/dad.png" alt="Image" class="img-1" style="border-radius:50%;width:400px;height:400px;object-fit:cover;">
-              <img src="assets/imgs/dashboard-2/testimonial-4.png" alt="Image" class="img-2">
-              <img src="assets/imgs/dashboard-2/testimonial-3.png" alt="Image" class="img-3">
+              <img src="{{ asset('assets/imgs/home-2/dad.png') }}" alt="Image" class="img-1" style="border-radius:50%;width:400px;height:400px;object-fit:cover;">
+              <img src="{{ asset('assets/imgs/home-2/testimonial-4.png') }}" alt="Image" class="img-2">
+              <img src="{{ asset('assets/imgs/home-2/testimonial-3.png') }}" alt="Image" class="img-3">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="testimonial__right-2" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="sec-title">Student are Says <br> EduQuest <span class="b-btm">About Courses</span></h2>
+              <h2 class="sec-title">Student are Says <br> Leina academia <span class="b-btm">About Courses</span></h2>
               <p>Architect client-centered total linkage for intuitive benefits. linkage for intuitive benefits Many
                 children & poor people are at high risk</p>
 
@@ -929,8 +929,8 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="testimonial__slide-2">
-                      <img src="assets/imgs/dashboard-2/testimonial-1.png" alt="Image" class="img">
-                      <img class="rating" src="assets/imgs/dashboard-2/rating.png" alt="Star">
+                      <img src="{{ asset('assets/imgs/home-2/testimonial-1.png') }}" alt="Image" class="img">
+                      <img class="{{ asset('assets/imgs/home-2/rating.png') }}" alt="Star">
                       <p class="text">“Sam is somebody you need as a steward of your brand. He’s able to craft
                         compelling brand
                         narratives that bring a company’s vision to life We care about safety big time — and so do your
@@ -940,8 +940,8 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonial__slide-2">
-                      <img src="assets/imgs/dashboard-2/testimonial-1.png" alt="Image" class="img">
-                      <img class="rating" src="assets/imgs/dashboard-2/rating.png" alt="Star">
+                      <img src="{{ asset('assets/imgs/home-2/testimonial-1.png') }}" alt="Image" class="img">
+                      <img class="rating" src="{{ asset('assets/imgs/home-2/rating.png') }}" alt="Star">
                       <p class="text">“Sam is somebody you need as a steward of your brand. He’s able to craft
                         compelling brand
                         narratives that bring a company’s vision to life We care about safety big time — and so do your
@@ -952,7 +952,7 @@
                 </div>
               </div>
 
-              <img src="assets/imgs/dashboard-2/shape-2.png" alt="Shape" class="shape">
+              <img src="{{ asset('assets/imgs/home-2/shape-2.png') }}" alt="Shape" class="shape">
             </div>
           </div>
         </div>
@@ -968,28 +968,28 @@
             <div class="swiper brand__slider-2" data-aos="fade-up" data-aos-delay="300">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-1.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-1.png') }}" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-2.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-2.png') }}" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-3.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-3.png') }}" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-4.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-4.png') }}" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-5.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-5.png') }}" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-1.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-1.png') }}" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-2.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-2.png') }}" alt="Logo">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/imgs/dashboard-2/brand-4.png" alt="Logo">
+                  <img src="{{ asset('assets/imgs/home-2/brand-4.png') }}" alt="Logo">
                 </div>
               </div>
             </div>
@@ -1008,7 +1008,7 @@
         <div class="row">
           <div class="col-lg-7 col-md-6">
             <div class="title-wrapper pb-5" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="sec-subtitle"><img src="assets/imgs/dashboard-1/dot.png" alt="dot"> blog</h2>
+              <h2 class="sec-subtitle"><img src="{{ asset('assets/imgs/home-1/dot.png') }}" alt="dot"> blog</h2>
               <h3 class="sec-title">Latest from the Blog</h3>
             </div>
           </div>
@@ -1023,7 +1023,7 @@
           <div class="col-lg-4 col-md-6">
             <article class="blog__item" data-aos="fade-up" data-aos-delay="400">
               <div class="blog__img-2">
-                <img src="assets/imgs/dashboard-2/work7.png" alt="Thumbnail" class="image">
+                <img src="{{ asset('assets/imgs/home-2/work.png') }}" alt="Thumbnail" class="image">
                 <a href="blog-details.html" class="category">Education</a>
               </div>
               <div class="blog__content">
@@ -1040,7 +1040,7 @@
           <div class="col-lg-4 col-md-6">
             <article class="blog__item" data-aos="fade-up" data-aos-delay="500">
               <div class="blog__img-2">
-                <img src="assets/imgs/dashboard-2/blog-2.jpg" alt="Thumbnail" class="image">
+                <img src="{{ asset('assets/imgs/home-1/blog-2.jpg') }}" alt="Thumbnail" class="image">
                 <a href="blog-details.html" class="category">Education</a>
               </div>
               <div class="blog__content">
@@ -1057,7 +1057,7 @@
           <div class="col-lg-4 col-md-6">
             <article class="blog__item" data-aos="fade-up" data-aos-delay="600">
               <div class="blog__img-2">
-                <img src="assets/imgs/dashboard-2/work6.webp" alt="Thumbnail" class="image">
+                <img src="{{ asset('assets/imgs/home-2/work6.webp') }}" alt="Thumbnail" class="image">
                 <a href="blog-details.html" class="category">Education</a>
               </div>
               <div class="blog__content">
@@ -1091,8 +1091,8 @@
           </div>
           <div class="col-md-6">
             <div class="footer__app">
-              <p>SSL for your site is a no-brainer best practice. Not only does an SSL help your visitors particularly
-                important .</p>
+              <p>Hope and sure you find interesting our site which will provide you with the best education desired ,a well understanding of the courses with the ability to get
+                cetifications well it importanrt for self independence .</p>
 
               <div class="footer__app-list">
                 <div class="footer__app-item">
@@ -1126,7 +1126,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-8">
             <div class="footer__logo-2">
-              <img src="assets/imgs/dashboard-1/loko.png" alt="Logo">
+              <img src="{{ asset('assets/imgs/home-1/loko.png') }}" alt="Logo">
               <p>SSL for your site is a no-brainer best practice. Not only lMS Website site.</p>
               <div class="newsletter__form-2">
                 <input type="email" name="email" placeholder="Enter email Address">
@@ -1168,7 +1168,7 @@
               <div class="footer__post">
                 <div class="image">
                   <a href="blog-details.html">
-                    <img src="assets/imgs/dashboard-2/bu4.png" alt="Image">
+                    <img src="{{ asset('assets/imgs/home-2/bu4.png') }}" alt="Image">
                   </a>
                 </div>
                 <div class="info">
@@ -1181,7 +1181,7 @@
               <div class="footer__post">
                 <div class="image">
                   <a href="blog-details.html">
-                    <img src="assets/imgs/dashboard-2/bu3.png" alt="Image">
+                    <img src="{{ asset('assets/imgs/home-2/bu3.png') }}" alt="Image">
                   </a>
                 </div>
                 <div class="info">
