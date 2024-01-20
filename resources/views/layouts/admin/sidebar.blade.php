@@ -2,7 +2,7 @@
     <div class="dlabnav-scroll">
         <ul class="metismenu" id="menu">
             <li>
-                <a class="has-arrow " href="{{ route('dashboard') }}" aria-expanded="false">
+                <a class="has-arrow " href="{{ route('admin.dashboard') }}" aria-expanded="false">
                     <i class="material-symbols-outlined">home</i>
                     <span class="nav-text">Dashboard</span>
                 </a>

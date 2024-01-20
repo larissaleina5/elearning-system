@@ -27,11 +27,24 @@ use App\Http\Requests\StudentRequest;
 
 Route::get('user/{id}',[StudentController::class,'show']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+
+Route::middleware("admin",'auth')->group(function(){
+    Route::post('/add/student',[StudentController::class,'storeStudent'])->name('store-student');
+    Route::post('/add/teacher',[TeacherController::class,'storeTeacher'])->name('store-teacher');
+    Route::get('/admin/dasboard',[DashboardController::class,'dashboard'])->name('admin.dashboard');
+    Route::get('/add/student',[StudentController::class,'addStudent'])->name('add-student');
+    Route::get('/add/teacher',[TeacherController::class,'addTeacher'])->name('add-teacher');
+    Route::get('/teachers',[TeacherController::class,'index'])->name('teachers');
+    Route::get('/students',[StudentController::class,'list'])->name('students');
+});
+Route::middleware("student",'auth')->group(function(){
+
+});
+Route::middleware("teacher",'auth')->group(function(){
+
+});
+Route::middleware('auth')->group(function (){
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -39,17 +52,16 @@ Route::middleware('auth')->group(function () {
         return auth()->user();
     });
 
-    Route::get('/teachers',[TeacherController::class,'index'])->name('teachers');
-Route::get('/students',[StudentController::class,'list'])->name('students');
+
 Route::put('/students/{id}','StudentController@update');
-Route::get('/dasboard',[DashboardController::class,'dashboard']);
-Route::get('/add/student',[StudentController::class,'addStudent'])->name('add-student');
+
+
 Route::get('/employtea',[EmployteaController::class,'add']);
 Route::get('/studetails',[StudetailsController::class,'studetails']);
 Route::get('/teadetail',[TeadetailController::class,'teadetail']);
-Route::post('/add/student',[StudentController::class,'storeStudent'])->name('store-student');
-Route::get('/add/teacher',[TeacherController::class,'addTeacher'])->name('add-teacher');
-Route::post('/add/teacher',[TeacherController::class,'storeTeacher'])->name('store-teacher');
+
+
+
 });
 
 Route::get('/',[HomeController::class,'welcome']);
