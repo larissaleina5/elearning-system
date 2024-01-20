@@ -37,6 +37,12 @@ Route::middleware("admin",'auth')->group(function(){
     Route::get('/add/teacher',[TeacherController::class,'addTeacher'])->name('add-teacher');
     Route::get('/teachers',[TeacherController::class,'index'])->name('teachers');
     Route::get('/students',[StudentController::class,'list'])->name('students');
+    Route::put('/student/{id}',[StudentController::class,'update'])->name('update.student');
+    Route::get('/update/student/{id}',[StudentController::class,'renew'])->name('edit.student');
+    Route::put('/teacher/{id}',[TeacherController::class,'update'])->name('update.teacher');
+    Route::get('update/teacher/{id}',[TeacherController::class,'renew'])->name('edit.teacher');
+    Route::delete('/delete/student/{id}',[StudentController::class,'delete'])->name('delete.student');
+    Route::delete('/delete/teacher/{id}',[TeacherController::class,'destroy'])->name('destroy.teacher');
 });
 Route::middleware("student",'auth')->group(function(){
 
