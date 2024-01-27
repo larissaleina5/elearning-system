@@ -10,8 +10,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmployteaController;
 use App\Http\Controllers\TeadetailController;
 use App\Http\Controllers\StudetailsController;
+use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\EnliststudentController;
-use App\Http\Requests\StudentRequest;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +28,9 @@ use App\Http\Requests\StudentRequest;
 Route::get('user/{id}',[StudentController::class,'show']);
 
 
-
+Route::resource('courses',CourseController::class);
 Route::middleware("admin",'auth')->group(function(){
+
     Route::post('/add/student',[StudentController::class,'storeStudent'])->name('store-student');
     Route::post('/add/teacher',[TeacherController::class,'storeTeacher'])->name('store-teacher');
     Route::get('/admin/dasboard',[DashboardController::class,'dashboard'])->name('admin.dashboard');
