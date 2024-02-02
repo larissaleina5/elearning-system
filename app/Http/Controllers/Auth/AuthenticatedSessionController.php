@@ -31,6 +31,12 @@ class AuthenticatedSessionController extends Controller
         if(auth()->user()->role_id===1){
             return redirect()->intended('admin/dasboard');
         }
+        if(auth()->user()->role_id===2){
+            return redirect()->intended('student/dasboard');
+        }
+        if(auth()->user()->role_id===3){
+            return redirect()->intended('teacher/dasboard');
+        }
 
     }
 

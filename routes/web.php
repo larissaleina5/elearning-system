@@ -13,6 +13,8 @@ use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\StudetailsController;
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\EnliststudentController;
+use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
+use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,11 +48,12 @@ Route::middleware("admin",'auth')->group(function(){
     Route::delete('/delete/student/{id}',[StudentController::class,'delete'])->name('delete.student');
     Route::delete('/delete/teacher/{id}',[TeacherController::class,'destroy'])->name('destroy.teacher');
 });
-Route::middleware("student",'auth')->group(function(){
 
+Route::middleware("student",'auth')->group(function(){
+Route::get('/student/dashboard',[StudentDashboardController::class,'index'])->name('student.dashboard');
 });
 Route::middleware("teacher",'auth')->group(function(){
-
+Route::get('/teacher/dashboard',[TeacherDashboardController::class,'index'])->name('teacher.dashboard');
 });
 Route::middleware('auth')->group(function (){
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
