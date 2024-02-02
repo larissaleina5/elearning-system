@@ -44,7 +44,7 @@ class StudentController extends Controller
         $user->save();
 
 
-        return $user;
+        return to_route('students');
     }
 
     public function renew($id){

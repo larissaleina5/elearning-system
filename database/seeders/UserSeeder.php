@@ -21,5 +21,24 @@ class UserSeeder extends Seeder
 'phone'=>671774509,
 'role_id'=>1
         ]);
+        User::create([
+            'name'=>'martin',
+            'email'=>'Bramslevel129@gmail.com',
+            'password'=>Hash::make('password'),
+            'phone'=>690394365,
+            'role_id'=>3
+                    ]);
+
+                    User::create([
+                        'name'=>'lunel',
+                        'email'=>'Bramslevel@gmail.com',
+                        'password'=>Hash::make('password'),
+                        'phone'=>653001393,
+                        'role_id'=>3
+                                ]);
+                }
+
     }
-}
+
+
+

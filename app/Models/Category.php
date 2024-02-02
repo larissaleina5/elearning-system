@@ -13,4 +13,5 @@ class Category extends Model
     public function courses():HasMany{
         return $this->hasMany(Course::class);
     }
+    
 }

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\Course;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -12,7 +15,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        $courses=Course::all();
+        return view('admin.courses.list',compact('courses'));
     }
 
     /**
@@ -20,7 +24,9 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        $teachers=User::where("role_id",3)->get();
+        $categories=Category::all();
+        return view('admin.courses.create',compact('teachers','categories'));
     }
 
     /**
@@ -28,7 +34,20 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $course=new Course;
+        $course->course_name=$request->name;
+        $course->course_description=$request->description;
+        $course->user_id=$request->teacher_id;
+        $course->category_id=$request->category_id;
+        $course->level=$request->level;
+        if($request->status==='on'){
+            $course->status=1;
+        }else{
+            $course->status=0;
+        }
+
+        $course->save();
+        return to_route('courses.index');
     }
 
     /**

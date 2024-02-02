@@ -28,7 +28,7 @@ public function storeTeacher(TeacherRequest  $request){
 'role_id'=>3
 ]);
 
-return $user;
+return to_route('teachers');
 }
 public function renew($id){
     $user=User::find($id);
