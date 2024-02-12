@@ -24,7 +24,12 @@
   <link rel="stylesheet" href="{{ asset('assets/css/master.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-
+<style>
+    .hover-class:hover{
+        color:  white;
+        background-color: black;
+    }
+</style>
 </head>
 
 <body>
@@ -328,16 +333,16 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="course__item-lg" data-aos="fade-up" data-aos-delay="300">
-              <img src="{{asset('assets/imgs/home-2/work.png')}}" alt="Image">
+              <img src="{{Storage::url($courseIsPopular->course_profile)}}" alt="Image">
               <div class="course__content-lg">
                 <ul class="meta">
                   <li>
-                    <a href="course.html" class="category">UI/UX Design</a>
+                    <a href="course.html" class="category">{{ $courseIsPopular->category->category_name }}</a>
                   </li>
                   <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
-                  <h2 class="course__title-lg">Advance Beginner's Goal & Managing <br> Online Course</h2>
+                  <h2 class="course__title-lg">{{ $courseIsPopular->course_name }}</h2>
                 </a>
                 <div class="course__author">
                   <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
@@ -356,20 +361,24 @@
               </div>
             </div>
           </div>
+          @foreach ($courseIsPost as $course)
           <div class="col-lg-3 col-md-6">
             <div class="course__item-2" data-aos="fade-up" data-aos-delay="400">
               <a href="course.html">
-                <img src="{{ asset('assets/imgs/home-2/cute.png') }}" alt="Image">
+                <img src="{{ Storage::url($course->course_profile) }}" alt="Image">
               </a>
               <div class="course__content-2">
                 <ul class="meta">
                   <li>
-                    <a href="course.html" class="category">UI/UX Design</a>
+
+
+
+                    <a href="course.html" class="category">{{ $course->category->category_name }}</a>
                   </li>
                   <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
-                  <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
+                  <h2 class="course__title-2">{{ $course->course_name }}</h2>
                 </a>
                 <ul class="rating">
                   <li class="text">(4 ratings)</li>
@@ -388,38 +397,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="course__item-2" data-aos="fade-up" data-aos-delay="500">
-              <a href="course.html">
-                <img src="{{ asset('assets/imgs/home-2/child2.png') }}" alt="Image">
-              </a>
-              <div class="course__content-2">
-                <ul class="meta">
-                  <li>
-                    <a href="course.html" class="category">UI/UX Design</a>
-                  </li>
-                  <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
-                </ul>
-                <a href="course.html">
-                  <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
-                </a>
-                <ul class="rating">
-                  <li class="text">(4 ratings)</li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="course__author">
-                  <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
-                  <div>
-                    <p>Chapin Daigle</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          @endforeach
+        <div class="mt-5 text-center">
+            <a href="about.html" class="btn-ractangle-2 hover-class">Other Course <img
+                src="{{ asset('assets/imgs/home-1/arrow.png') }}" class="hover-class" alt=""></a>
+        </div>
         </div>
       </div>
     </section>
@@ -557,74 +539,26 @@
         <div class="row">
           <div class="swiper category__slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="category__item" data-aos="fade-up" data-aos-delay="300">
-                  <a href="course.html">
-                    <img src="{{ asset('assets/imgs/home-2/cat-1.jpg') }}" alt="Image" class="image">
-                  </a>
-                  <div class="icon">
-                    <img src="{{ asset('assets/imgs/home-2/c1.png') }}" alt="Icon">
+                @foreach ($categories as $category )
+                <div class="swiper-slide">
+                    <div class="category__item" data-aos="fade-up" data-aos-delay="300">
+                      <a href="course.html">
+                        <img src="{{ asset('assets/imgs/home-2/cat-1.jpg') }}" alt="Image" class="image">
+                      </a>
+                      <div class="icon">
+                        <img src="{{ asset('assets/imgs/home-2/c1.png') }}" alt="Icon">
+                      </div>
+                      <a href="course.html">
+                        <h3 class="category__title">{{ $category->category_name }}</h3>
+                      </a>
+                      <p><span></span> 16 Course</p>
+                      <a href="course.html" class="link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
                   </div>
-                  <a href="course.html">
-                    <h3 class="category__title">Management</h3>
-                  </a>
-                  <p><span></span> 16 Course</p>
-                  <a href="course.html" class="link">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="category__item" data-aos="fade-up" data-aos-delay="400">
-                  <a href="course.html">
-                    <img src="{{ asset('assets/imgs/home-2/cat-2.jpg') }}" alt="Image" class="image">
-                  </a>
-                  <div class="icon">
-                    <img src="{{ asset('assets/imgs/home-2/c2.png') }}" alt="Icon">
-                  </div>
-                  <a href="course.html">
-                    <h3 class="category__title">IT & Software</h3>
-                  </a>
-                  <p><span></span> 16 Course</p>
-                  <a href="course.html" class="link">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="category__item" data-aos="fade-up" data-aos-delay="500">
-                  <a href="course.html">
-                    <img src="{{ asset('assets/imgs/home-2/cat-3.jpg') }}" alt="Image" class="image">
-                  </a>
-                  <div class="icon">
-                    <img src="{{ asset('assets/imgs/home-2/c3.png') }}" alt="Icon">
-                  </div>
-                  <a href="course.html">
-                    <h3 class="category__title">Web Development</h3>
-                  </a>
-                  <p><span></span> 16 Course</p>
-                  <a href="course.html" class="link">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="category__item" data-aos="fade-up" data-aos-delay="600">
-                  <a href="course.html">
-                    <img src="{{ asset('assets/imgs/home-2/cat-4.jpg') }}" alt="Image" class="image">
-                  </a>
-                  <div class="icon">
-                    <img src="{{ asset('assets/imgs/home-2/c4.png') }}" alt="Icon">
-                  </div>
-                  <a href="course.html">
-                    <h3 class="category__title">HR Admin</h3>
-                  </a>
-                  <p><span></span> 16 Course</p>
-                  <a href="course.html" class="link">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
+                @endforeach
+
             </div>
 
             <div class="category__dots">

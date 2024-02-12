@@ -20,6 +20,7 @@ class CourseSeeder extends Seeder
             "user_id"=>3,
             "category_id"=>1,
             "level"=>"novice",
+            'isPopular'=>1,
             "status"=>1,
             "course_profile"=>"course/Introduction-to-Software-Engineering--Final-image.png",
         ]);
@@ -28,6 +29,7 @@ class CourseSeeder extends Seeder
             'course_name'=>'Software Development Lifecycle',
             "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
             "user_id"=>3,
+            'isPopular'=>0,
             "category_id"=>1,
             "level"=>"difficult",
             "status"=>1,
@@ -38,6 +40,7 @@ class CourseSeeder extends Seeder
                         'course_name'=>'Master of Science in Software Engineering',
                         "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                         "user_id"=>3,
+                        'isPopular'=>1,
                         "category_id"=>1,
                         "level"=>"difficult",
                         "status"=>1,
@@ -46,6 +49,7 @@ class CourseSeeder extends Seeder
 
                                 Course::create([
                                     'course_name'=>'Doctor of Natural Medicine',
+                                    'isPopular'=>1,
                                     "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                                     "user_id"=>3,
                                     "category_id"=>2,
@@ -56,6 +60,7 @@ class CourseSeeder extends Seeder
 
                                             Course::create([
                                                 'course_name'=>'Doctor of Naturopathic Medicine Advanced Diploma',
+                                                'isPopular'=>0,
                                                 "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                                                 "user_id"=>3,
                                                 "category_id"=>2,
@@ -66,6 +71,7 @@ class CourseSeeder extends Seeder
 
                                                         Course::create([
                                                             'course_name'=>'React Native: Mobile App Development in 2024',
+                                                            'isPopular'=>0,
                                                             "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                                                             "user_id"=>3,
                                                             "category_id"=>3,
@@ -78,6 +84,7 @@ class CourseSeeder extends Seeder
                                                                         'course_name'=>'Flutter & Dart Essentials-Build Mobile Apps like a Pro',
                                                                         "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                                                                         "user_id"=>3,
+                                                                        'isPopular'=>0,
                                                                         "category_id"=>3,
                                                                         "level"=>"difficult",
                                                                         "status"=>1,
