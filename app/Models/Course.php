@@ -26,7 +26,7 @@ return $this->belongsToMany(User::class);
     public function payment():HasMany{
         return $this->hasMany(Payment::class);
     }
-   
+
     public function lessons():BelongsToMany{
 
         return $this->belongsToMany(Lesson::class);

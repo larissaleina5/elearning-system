@@ -12,6 +12,7 @@ use App\Http\Controllers\TeadetailController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\StudetailsController;
 use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\EnliststudentController;
 use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
 use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardController;
@@ -34,6 +35,7 @@ Route::get('user/{id}',[StudentController::class,'show']);
 
 Route::middleware("admin",'auth')->group(function(){
     Route::resource('courses',CourseController::class);
+    Route::delete('/delete/courses/{id}',[CourseController::class,'delete'])->name('delete.courses');
     Route::post('/add/student',[StudentController::class,'storeStudent'])->name('store-student');
     Route::post('/add/teacher',[TeacherController::class,'storeTeacher'])->name('store-teacher');
     Route::get('/admin/dasboard',[DashboardController::class,'dashboard'])->name('admin.dashboard');
@@ -80,5 +82,5 @@ Route::get('/',[HomeController::class,'welcome']);
 
 Route::post('/login2',[LoginController::class,'store'])->name('store-in');
 
-
+ 
 require __DIR__.'/auth.php';

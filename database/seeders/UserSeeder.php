@@ -18,6 +18,7 @@ class UserSeeder extends Seeder
 'name'=>'admin',
 'email'=>'tientcheularissaleina@gmail.com',
 'password'=>Hash::make('12345678'),
+"profile"=>'assets/imgs/home-1/profile.png',
 'phone'=>671774509,
 'role_id'=>1
         ]);
@@ -25,6 +26,7 @@ class UserSeeder extends Seeder
             'name'=>'martin',
             'email'=>'Bramslevel129@gmail.com',
             'password'=>Hash::make('password'),
+            "profile"=>'assets/imgs/home-1/profile.png',
             'phone'=>690394365,
             'role_id'=>3
                     ]);
@@ -34,6 +36,7 @@ class UserSeeder extends Seeder
                         'email'=>'Bramslevel@gmail.com',
                         'password'=>Hash::make('password'),
                         'phone'=>653001393,
+                        "profile"=>'assets/imgs/home-1/profile.png',
                         'role_id'=>3
                                 ]);
                 }

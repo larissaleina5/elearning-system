@@ -12,7 +12,7 @@ Update Student
                         <h5 class="mb-0">Student Details</h5>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('update.student',$user->id) }}" method="post">
+                        <form action="{{route('update.students',$user->id) }}" method="post">
                             @csrf
                             @method('PUT')
 
