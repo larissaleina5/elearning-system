@@ -12,7 +12,7 @@ Create Course
                         <h5 class="mb-0">New Course</h5>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('courses.store') }}" method="post">
+                        <form action="{{route('courses.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
 
                             <div class="row">
@@ -83,9 +83,11 @@ Create Course
                                     <label class="form-check-label" for="flexSwitchCheckChecked">status</label>
                                 </div>
                             </div>
+                            <div class="">
+                                <i class="fas fa-file"></i>
 
-
-
+                                <input type="file" name="course_profile" required>
+                            </div>
                             </div>
                         </div>
 

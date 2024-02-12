@@ -14,6 +14,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Course extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'course_name',
+        'course_description',
+        'level',
+        'status',
+        'course_profile'
+
+    ];
     public function students():BelongsToMany{
 return $this->belongsToMany(User::class);
     }

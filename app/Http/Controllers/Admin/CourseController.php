@@ -45,6 +45,9 @@ class CourseController extends Controller
         }else{
             $course->status=0;
         }
+        $image_path = $request->course_profile->store('course', 'public');
+        $course->course_profile=$image_path;
+
 
         $course->save();
         return to_route('courses.index');

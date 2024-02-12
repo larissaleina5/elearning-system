@@ -28,6 +28,7 @@ return new class extends Migration
             ->restrictOnDelete();
             $table->string("level");
             $table->boolean('status');
+            $table->string('course_profile');
             $table->boolean('isPayable')->default(0);
             $table->timestamps();
         });

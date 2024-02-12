@@ -67,7 +67,7 @@ List of Courses
                                         </td>
                                         <td>
                                             <div class="trans-list">
-                                                <img src="{{ asset('public/assets/images/trans/5.jpg') }}" alt="" class="avatar me-3">
+                                                <img src="{{ Storage::url($course->course_profile) }}" alt="" class="avatar me-3">
                                                 <h4>{{ $course->course_name }}</h4>
                                             </div>
                                         </td>
