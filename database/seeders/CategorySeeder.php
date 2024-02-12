@@ -14,20 +14,31 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         Category::create([
-            'category_name'=>'Computer Science',
+            'category_name'=>'Software Engineering',
                     ]);
 
                     Category::create([
                         'category_name'=>'Medicine',
                                 ]);
 
-                                Category::create([
-                                    'category_name'=>'Commercial',
-                                            ]);
 
                                             Category::create([
-                                                'category_name'=>'Gastronomy',
+                                                'category_name'=>'Mobile App',
                                                         ]);
+                                                        Category::create([
+                                                            'category_name'=>'Web Development',
+                                                                    ]);
+
+                                                                                    Category::create([
+                                                                                        'category_name'=>'Artificial Interligence',
+                                                                                                ]);
+                                                                                                Category::create([
+                                                                                                    'category_name'=>'Digital Marketting',
+                                                                                                            ]);
+                                                                    Category::create([
+                                                                        'category_name'=>'Entrepreneurship',
+                                                                                                        ]);
+
 
     }
 }
