@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/magnifi.css') }}">
-  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/master.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
@@ -140,15 +140,15 @@
 
 
   <!-- All JS Files -->
-  <script src="assets/js/jquery-3.6.1.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/jquery.meanmenu.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/mixitup.min.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/aos.js"></script>
-  <script src="assets/js/backToTop.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('assets/js/jquery-3.6.1.min.js') }}"></script>
+  <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/js/jquery.meanmenu.min.js') }}"></script>
+  <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/js/mixitup.min.js') }}"></script>
+  <script src="{{ asset('assets/js/counter.js') }}"></script>
+  <script src="{{ asset('assets/js/aos.js') }}"></script>
+  <script src="{{ asset('assets/js/backToTop.js') }}"></script>
+  <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>

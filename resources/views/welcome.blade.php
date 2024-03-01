@@ -135,8 +135,8 @@ Homepage
               </div>
             </div>
           </div>
-          @foreach ($courseIsPost as $course)
-          <div class="col-lg-3 col-md-6">
+        @foreach ($courseIsPost as $course)
+        <div class="col-lg-3 col-md-6">
             <div class="course__item-2" data-aos="fade-up" data-aos-delay="400">
               <a href="course.html">
                 <img src="{{ Storage::url($course->course_profile) }}" alt="Image">
@@ -144,80 +144,78 @@ Homepage
               <div class="course__content-2">
                 <ul class="meta">
                   <li>
-
-
-
                     <a href="course.html" class="category">{{ $course->category->category_name }}</a>
                   </li>
                   <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                 </ul>
                 <a href="course.html">
-                  <h2 class="course__title-2">{{ $course->course_name }}</h2>
+                <h2 class="course__title-2">{{ $course->course_name }}</h2>
                 </a>
                 <ul class="rating">
-                  <li class="text">(4 ratings)</li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
+                <li class="text">(4 ratings)</li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
                 </ul>
                 <div class="course__author">
-                  <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
-                  <div>
+                <img src="{{ asset('assets/imgs/home-1/instructor.png') }}" alt="Author Image">
+                <div>
                     <p>Chapin Daigle</p>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          @endforeach
+            </div>
+        </div>
+        @endforeach
+        
         <div class="mt-5 text-center">
-            <a href="about.html" class="btn-ractangle-2 hover-class">Other Course <img
+            <a href="{{ route('front.courses') }}" class="btn-ractangle-2 hover-class">Other Course <img
                 src="{{ asset('assets/imgs/home-1/arrow.png') }}" class="hover-class" alt=""></a>
         </div>
         </div>
-      </div>
+        </div>
     </section>
     <!-- course area end  -->
 
 
     <!-- Register area start -->
     <section class="register__area-2 pt-120 pb-140">
-      <div class="container">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-7">
+        <div class="col-lg-7">
             <div class="register__left-2">
-              <h2 class="sec-title" data-aos="fade-up" data-aos-delay="200">Register <span class="b-btm">Now & Get
-                  One</span> <br> Course for Free!</h2>
-              <div class="register__countdown" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="sec-title" data-aos="fade-up" data-aos-delay="200">Register <span class="b-btm">Now & Get
+                One</span> <br> Course for Free!</h2>
+                <div class="register__countdown" data-aos="fade-up" data-aos-delay="300">
                 <ul id="countdown">
-                  <li><span id="days"></span> <br> days</li>
-                  <li><span id="hours"></span> <br> Hours</li>
-                  <li><span id="minutes"></span> <br> Minutes</li>
-                  <li><span id="seconds"></span> <br> Seconds</li>
+            <li><span id="days"></span> <br> days</li>
+            <li><span id="hours"></span> <br> Hours</li>
+            <li><span id="minutes"></span> <br> Minutes</li>
+            <li><span id="seconds"></span> <br> Seconds</li>
                 </ul>
-              </div>
-              <div class="course__free-2">
+            </div>
+            <div class="course__free-2">
                 <div class="row">
-                  <div class="col-md-6">
+                <div class="col-md-6">
                     <div class="course__item-2" data-aos="fade-up" data-aos-delay="400">
-                      <a href="course.html">
+                <a href="course.html">
                         <img src="{{ asset('assets/imgs/home-2/work2.png') }}" alt="Image">
-                      </a>
-                      <div class="course__content-2">
+                    </a>
+                    <div class="course__content-2">
                         <ul class="meta">
-                          <li>
+                        <li>
                             <a href="course.html" class="category">UI/UX Design</a>
                 </li>
-                          <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
+                        <li><img src="{{ asset('assets/imgs/home-1/student.png') }}" alt="Student Type"> 40+ Students</li>
                         </ul>
                         <a href="course.html">
-                          <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
+                        <h2 class="course__title-2">Advance Beginner's Goal & Managing Online Course</h2>
                         </a>
                         <ul class="rating">
-                          <li class="text">(4 ratings)</li>
-                          <li><i class="fa-solid fa-star"></i></li>
+                        <li class="text">(4 ratings)</li>
+                        <li><i class="fa-solid fa-star"></i></li>
                           <li><i class="fa-solid fa-star"></i></li>
                           <li><i class="fa-solid fa-star"></i></li>
                           <li><i class="fa-solid fa-star"></i></li>

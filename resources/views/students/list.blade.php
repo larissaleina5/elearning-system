@@ -2,7 +2,6 @@
 @section('title')
 List of Sudents
 @endsection
-
 @section('content')
 <div class="content-body">
     <!-- row -->
@@ -38,7 +37,7 @@ List of Sudents
                     <!--column-->
                     <div class="col-xl-12 wow fadeInUp" data-wow-delay="1.5s">
                         <div class="table-responsive full-data">
-                            <table class="table-responsive-lg table display dataTablesCard student-tab dataTable no-footer" id="example-student">
+                            <table class="table-responsive-lg table display dataTablesCard student-tab dataTable no-footer" i$d="example-student">
                                 <thead>
                                     <tr>
                                         <th>
