@@ -14,6 +14,7 @@ class HomeController extends Controller
  //to get all value type $course=Course::all()->first();
 //$course=Course::where('level','difficult')->take(1)->inRandomOrder()->get();
 //return $course;
+
 $courseIsPopular=Course::where('isPopular',1)->first();
 $courseIsPost=Course::where('status',1)->take(2)->inRandomOrder()->get();
 $categories=Category::all();

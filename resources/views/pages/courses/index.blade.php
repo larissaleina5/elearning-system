@@ -14,8 +14,8 @@ List of courses
       <div class="container">
         <h2 class="breadcrumb__title">Browse Courses</h2>
         <ul class="breadcrumb__menu">
-          <li><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i></li>
-          <li><a href="#">Page</a><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i></li>
+            <li><a href="#">Page</a><i class="fa-solid fa-chevron-right"></i></li>
           <li><a href="#">Browse Courses</a></li>
         </ul>
       </div>
