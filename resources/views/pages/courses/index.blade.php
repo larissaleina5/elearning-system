@@ -272,369 +272,39 @@ List of courses
                         </div>
 
 
-                        @foreach($courseIsPost as $course)
+
                         <div class="course__grid-3">
-                            <div class="course__item-2">
+                            @foreach($courseIsPost as $course)
+                                <div class="course__item-2">
                                 <div class="course__img-3">
                                     <img src="{{ Storage::url($course->course_profile) }}" alt="Image">
                                     <span class="course__priceTitle">$49.00</span>
                                 </div>
                                 <div class="course__content-4">
-                                  <div class="course__category-3">
+                                    <div class="course__category-3">
                                     <span class="course__category-title">{{ $course->category->category_name }}</span>
                                     <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
+                                    </div>
                                     <h6 class="course__itemTitle"><a href="course-details.html">{{ $course->course_name }}</a></h6>
                                 <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
-                                </div>
-                                <div class="course__btm3">
-                                      <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                      <span>Jerome Bell</span>
-                                </div>
-                                </div>
-                               </div>
-                            @endforeach
-
-
-
-
-
-
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/15.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                    <span class="course__category-title">UI/UX Design</span>
-                                    <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
-                                    <h6 class="course__itemTitle"><a href="course-details.html">How to design a logo - a beginners course</a></h6>
-                                <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
-                                </div>
-                                <div class="course__btm3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                  <span>Cody Fisher</span>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/16.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                    <span class="course__category-title">UI/UX Design</span>
-                                    <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
-                                    <h6 class="course__itemTitle"><a href="course-details.html">How to became a startup founder</a></h6>
-                                <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
-                                </div>
-                                <div class="course__btm3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                  <span>Darlene Robertson</span>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/17.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                      <span class="course__category-title">UI/UX Design</span>
-                                      <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                    </div>
-                                      <h6 class="course__itemTitle"><a href="course-details.html">Advance Beginner's Goal & Managing Course</a></h6>
-                                    <div class="course__rating">
                                     <div class="course__rating-item">
-                                      (4 ratings)
+                                    (4 ratings)
                                     </div>
                                     <div class="course__rating-item">
-                                      <i class="fa-solid fa-star"></i>
-                                      <i class="fa-solid fa-star"></i>
-                                      <i class="fa-solid fa-star"></i>
-                                      <i class="fa-solid fa-star"></i>
-                                      <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                     </div>
-                                  </div>
-                                  <div class="course__btm3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                    <span>Savannah Nguyen</span>
-                                  </div>
-                                </div>
-                            </div>
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/18.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                    <span class="course__category-title">UI/UX Design</span>
-                                    <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
-                                    <h6 class="course__itemTitle"><a href="course-details.html">Leadership and Management Skills</a></h6>
-                                <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
                                 </div>
                                 <div class="course__btm3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                  <span>Cameron Williamson</span>
+                                        <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
+                                        <span>Jerome Bell</span>
                                 </div>
                                 </div>
                             </div>
-
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/19.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                    <span class="course__category-title">UI/UX Design</span>
-                                    <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
-                                    <h6 class="course__itemTitle"><a href="course-details.html">Basic Accounting Principles for Non-Accountants</a></h6>
-                                <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
-
-                                </div>
-                                <div class="course__btm3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                  <span>Ronald Richards</span>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/25.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                    <span class="course__category-title">UI/UX Design</span>
-                                    <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
-                                    <h6 class="course__itemTitle"><a href="course-details.html">Cybersecurity Fundamentals for Everyone</a></h6>
-                                <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
-
-                                </div>
-                                <div class="course__btm3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                  <span>Wade Warren</span>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/21.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                    <span class="course__category-title">UI/UX Design</span>
-                                    <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
-                                    <h6 class="course__itemTitle"><a href="course-details.html">Business & Management studies</a></h6>
-                                <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
-
-                                </div>
-                                <div class="course__btm3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                  <span>Esther Howard</span>
-                                </div>
-                                </div>
-                            </div>
-
-
-                            <div class="course__item-2">
-                            <div class="course__content-4">
-                                <div class="course__img-3">
-                                <img src="{{ asset('assets/imgs/inner-2/course-v2/30.jpg') }}" alt="Image">
-                                <span class="course__priceTitle">$49.00</span>
-                            </div>
-                                <div class="course__category-3">
-                                <span class="course__category-title">UI/UX Design</span>
-                                <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                </div>
-                                <h6 class="course__itemTitle"><a href="course-details.html">History of art, architecture & design</a></h6>
-                            <div class="course__rating">
-                                <div class="course__rating-item">
-                                (4 ratings)
-                                </div>
-                                <div class="course__rating-item">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                </div>
-                              </div>
-                              <div class="course__btm3">
-                                <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                <span>Eleanor Pena</span>
-                              </div>
-                              </div>
-                            </div>
-
-
-
-
-                            <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ asset('assets/imgs/inner-2/course-v2/23.jpg') }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
-                                </div>
-                                <div class="course__content-4">
-                                  <div class="course__category-3">
-                                    <span class="course__category-title">UI/UX Design</span>
-                                    <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                  </div>
-                                    <h6 class="course__itemTitle"><a href="course-details.html">Marketing Fundamentals for Small Businesses</a></h6>
-                                <div class="course__rating">
-                                  <div class="course__rating-item">
-                                    (4 ratings)
-                                  </div>
-                                  <div class="course__rating-item">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                  </div>
-
-                                </div>
-                                <div class="course__btm3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                  <span>Arlene McCoy</span>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="course__item-2">
-                              <div class="course__content-4">
-                                <div class="course__img-3">
-                                  <img src="{{ asset('assets/imgs/inner-2/course-v2/29.jpg') }}" alt="Image">
-                                  <span class="course__priceTitle">$49.00</span>
-                              </div>
-                                <div class="course__category-3">
-                                  <span class="course__category-title">UI/UX Design</span>
-                                  <span class="course__student-3"><i class="fa-solid fa-layer-group"></i> 40+ Students</span>
-                                </div>
-                                  <h6 class="course__itemTitle"><a href="course-details.html">Become a PHP master and make money fast</a></h6>
-                              <div class="course__rating">
-                                <div class="course__rating-item">
-                                  (4 ratings)
-                                </div>
-                                <div class="course__rating-item">
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                </div>
-                              </div>
-                              <div class="course__btm3">
-                                <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                <span>Arlene McCoy</span>
-                              </div>
-                              </div>
-                            </div>
+                                @endforeach
 
 
 
@@ -643,7 +313,7 @@ List of courses
                                 <a class="pagination-link" href="#" aria-label="Previous">
                                     <i class="fa-solid fa-angles-left"></i>
                                 </a>
-                              </li>
+                            </li>
                             <li class="page-item"><a href="">1</a></li>
                             <li class="page-item"><a href="">2</a></li>
                             <li class="page-item"><a href="">3</a></li>
@@ -652,7 +322,7 @@ List of courses
                                 <a class="pagination-link" href="#" aria-label="Next">
                                     <i class="fa-solid fa-angles-right"></i>
                                 </a>
-                              </li>
+                            </li>
                         </ul>
                     </div>
                 </div>

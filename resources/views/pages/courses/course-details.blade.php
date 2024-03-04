@@ -312,7 +312,7 @@ Course Details
                           <img src="{{ asset('assets/imgs/inner-2/thumb/recent-3.png') }}" alt="Image">
                         </div>
                         <div class="course__recentRight">
-                          <a href="course.html">{{ $category->category_name }}</a>
+                          <a href="course.html">{{ $category->category_name}}</a>
                           <span>$35.00</span>
                         </div>
                         </div>
