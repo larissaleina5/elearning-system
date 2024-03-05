@@ -19,6 +19,7 @@ class Course extends Model
         'course_description',
         'level',
         'status',
+        'user_id',
         'course_profile'
 
     ];

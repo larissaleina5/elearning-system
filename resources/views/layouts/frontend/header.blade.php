@@ -17,14 +17,14 @@
                     <ul>
                       <li class="has-dropdown"><a href="#">Dashboard</a>
                         <ul class="main-dropdown">
-                          <li><a href="index.html">Dashboard</a></li>
+                          <li><a href="{{ route('admin.dashboard')}}">Dashboard</a></li>
                         </ul>
                       </li>
-                      <li class="has-dropdown"><a href="#">courses</a>
+                      <li class="has-dropdown"><a href="{{ route('front.courses') }}">courses</a>
                         <ul class="main-dropdown">
-                          <li><a href="course.html">Course</a></li>
-                          <li><a href="course-2.html">Course v2</a></li>
-                          <li><a href="course-details.html">Course Details</a></li>
+                        <li><a href="{{route('front.courses')}}">Course</a></li>
+                        <li><a href="course-2.html">Course v2</a></li>
+                        <li><a href="#">Course Details</a></li>
                         </ul>
                       </li>
                       <li><a href="about.html">About</a>

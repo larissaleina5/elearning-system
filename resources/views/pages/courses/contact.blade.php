@@ -8,8 +8,8 @@ Contact us
 
     <!-- breadcrumb area  -->
     <div class="breadcrumb__area">
-     <img class="shape-2" src="assets/imgs/inner/bradcrumb-shape-2.png" alt="shape-1">
-     <img class="shape-3"  src="assets/imgs/inner/dotted-1.png" alt="shape-1">
+     <img class="shape-2" src="{{ asset('assets/imgs/inner/bradcrumb-shape-2.png') }}" alt="shape-1">
+     <img class="shape-3"  src="{{ asset('assets/imgs/inner/dotted-1.png') }}" alt="shape-1">
      <div class="container">
        <h2 class="breadcrumb__title">Browse Courses</h2>
        <ul class="breadcrumb__menu">
@@ -197,7 +197,7 @@ Contact us
                            <div class="course__recentPost-wrapper">
                                <div class="course__recentPost-item">
                                    <div class="course__recentPost-left">
-                                       <img src="assets/imgs/inner-2/recent-post-05.png" alt="Post">
+                                       <img src="{{ asset('assets/imgs/inner-2/recent-post-05.png') }}" alt="Post">
                                    </div>
                                    <div class="course__recentPost-right">
                                            <h4><i class="fa-solid fa-calendar-days"></i> <span>Feb 18, 20223</span></h4>
@@ -208,7 +208,7 @@ Contact us
                                </div>
                                <div class="course__recentPost-item">
                                    <div class="course__recentPost-left">
-                                       <img src="assets/imgs/inner-2/recent-post-06.png" alt="Post">
+                                       <img src="{{ asset('assets/imgs/inner-2/recent-post-06.png') }}" alt="Post">
                                    </div>
                                    <div class="course__recentPost-right">
                                          <h4><i class="fa-solid fa-calendar-days"></i> <span>Feb 18, 20223</span></h4>
@@ -219,7 +219,7 @@ Contact us
                                </div>
                                <div class="course__recentPost-item">
                                    <div class="course__recentPost-left">
-                                       <img src="assets/imgs/inner-2/recent-post-07.png" alt="Post">
+                                       <img src="{{ asset('assets/imgs/inner-2/recent-post-07.png') }}" alt="Post">
                                    </div>
                                    <div class="course__recentPost-right">
                                          <h4><i class="fa-solid fa-calendar-days"></i> <span>Feb 18, 20223</span></h4>
@@ -230,7 +230,7 @@ Contact us
                                </div>
                                <div class="course__recentPost-item">
                                    <div class="course__recentPost-left">
-                                       <img src="assets/imgs/inner-2/recent-post-08.png" alt="Post">
+                                       <img src="{{ asset('assets/imgs/inner-2/recent-post-08.png') }}" alt="Post">
                                    </div>
                                    <div class="course__recentPost-right">
                                          <h4><i class="fa-solid fa-calendar-days"></i> <span>Feb 18, 20223</span></h4>
@@ -262,17 +262,17 @@ Contact us
                                      </select>
                                  </div>
                                  <div class="course__iconBox">
-                                   <img src="assets/imgs/inner-2/icon/gird-icon.png" alt="Icon">
+                                   <img src="{{ asset('assets/imgs/inner-2/icon/gird-icon.png') }}" alt="Icon">
                                  </div>
                                  <div class="course__iconBox">
-                                   <img src="assets/imgs/inner-2/icon/grid-bar.png" alt="Icon">
+                                   <img src="{{ asset('assets/imgs/inner-2/icon/grid-bar.png') }}" alt="Icon">
                                  </div>
                              </div>
                        </div>
                        <div class="course__grid-2">
                            <div class="course__item-inner">
                                <div class="course__img-2">
-                                   <img src="assets/imgs/inner-2/course/10.jpg" alt="Image">
+                                   <img src="{{ asset('assets/imgs/inner-2/course/10.jpg') }}" alt="Image">
                                    <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                                </div>
                                <span class="course__category-title">Mathematics</span>
@@ -290,7 +290,7 @@ Contact us
                                </div>
                                <div class="course__btm">
                                    <div class="course__btm-left">
-                                       <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                       <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
                                        <span>Jerome Bell</span>
                                    </div>
                                    <div class="course__btm-right">
@@ -301,7 +301,7 @@ Contact us
                            </div>
                            <div class="course__item-inner">
                                <div class="course__img-2">
-                                   <img src="assets/imgs/inner-2/course/9.jpg" alt="Image">
+                                   <img src="{{ asset('assets/imgs/inner-2/course/9.jpg') }}" alt="Image">
                                    <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                                </div>
                                <span class="course__category-title">UI/UX Design</span>
@@ -319,18 +319,18 @@ Contact us
                                </div>
                                <div class="course__btm">
                                    <div class="course__btm-left">
-                                       <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                       <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
                                        <span>Jerome Bell</span>
                                    </div>
                                    <div class="course__btm-right">
-                                       <span class="course__price offer-price">$79.00</span>
+                                    <span class="course__price offer-price">$79.00</span>
                                        <span class="course__price">$79.00</span>
                                    </div>
                                </div>
                            </div>
                            <div class="course__item-inner">
                                <div class="course__img-2">
-                                   <img src="assets/imgs/inner-2/course/12.jpg" alt="Image">
+                                   <img src="{{ asset('assets/imgs/inner-2/course/12.jpg') }}" alt="Image">
                                    <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                                </div>
                                <span class="course__category-title">Development</span>
@@ -348,7 +348,7 @@ Contact us
                                </div>
                                <div class="course__btm">
                                    <div class="course__btm-left">
-                                       <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                       <img src="{{ asset(assets/imgs/inner-2/course/author.png) }}" alt="Image">
                                        <span>Jerome Bell</span>
                                    </div>
                                    <div class="course__btm-right">
@@ -359,7 +359,7 @@ Contact us
                            </div>
                            <div class="course__item-inner">
                                <div class="course__img-2">
-                                   <img src="assets/imgs/inner-2/course/13.jpg" alt="Image">
+                                   <img src="{{ asset('assets/imgs/inner-2/course/13.jpg') }}" alt="Image">
                                    <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                                </div>
                                <span class="course__category-title">Mathematics</span>
@@ -377,7 +377,7 @@ Contact us
                                </div>
                                <div class="course__btm">
                                    <div class="course__btm-left">
-                                       <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                       <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
                                        <span>Jerome Bell</span>
                                    </div>
                                    <div class="course__btm-right">
@@ -388,7 +388,7 @@ Contact us
                            </div>
                            <div class="course__item-inner">
                                <div class="course__img-2">
-                                   <img src="assets/imgs/inner-2/course/14.jpg" alt="Image">
+                                   <img src="{{ asset('assets/imgs/inner-2/course/14.jpg') }}" alt="Image">
                                    <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                                </div>
                                <span class="course__category-title">Mathematics</span>
@@ -406,7 +406,7 @@ Contact us
                                </div>
                                <div class="course__btm">
                                    <div class="course__btm-left">
-                                    <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                    <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
                                     <span>Jerome Bell</span>
                                 </div>
                                 <div class="course__btm-right">
@@ -417,7 +417,7 @@ Contact us
                         </div>
                         <div class="course__item-inner">
                             <div class="course__img-2">
-                                <img src="assets/imgs/inner-2/course/12.jpg" alt="Image">
+                                <img src="{{ asset('assets/imgs/inner-2/course/12.jpg') }}" alt="Image">
                                 <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                             </div>
                             <span class="course__category-title">Mathematics</span>
@@ -436,7 +436,7 @@ Contact us
                             </div>
                             <div class="course__btm">
                                    <div class="course__btm-left">
-                                       <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                       <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
                                        <span>Jerome Bell</span>
                                    </div>
                                    <div class="course__btm-right">
@@ -447,7 +447,7 @@ Contact us
                            </div>
                            <div class="course__item-inner">
                                 <div class="course__img-2">
-                            <img src="assets/imgs/inner-2/course/16.jpg" alt="Image">
+                            <img src="{{ asset('assets/imgs/inner-2/course/16.jpg') }}" alt="Image">
                                    <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                                </div>
                                <span class="course__category-title">Mathematics</span>
@@ -465,7 +465,7 @@ Contact us
                                </div>
                                <div class="course__btm">
                                    <div class="course__btm-left">
-                                       <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                       <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
                                        <span>Jerome Bell</span>
                                    </div>
                                    <div class="course__btm-right">
@@ -476,7 +476,7 @@ Contact us
                            </div>
                            <div class="course__item-inner">
                                <div class="course__img-2">
-                                   <img src="assets/imgs/inner-2/course/17.jpg" alt="Image">
+                                   <img src="{{ asset('assets/imgs/inner-2/course/17.jpg') }}" alt="Image">
                                    <span><i class="fa-solid fa-star"></i>4.5 (120)</span>
                                </div>
                                <span class="course__category-title">Mathematics</span>
@@ -494,7 +494,7 @@ Contact us
                                </div>
                                <div class="course__btm">
                                    <div class="course__btm-left">
-                                       <img src="assets/imgs/inner-2/course/author.png" alt="Image">
+                                       <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
                                        <span>Jerome Bell</span>
                                    </div>
                                    <div class="course__btm-right">

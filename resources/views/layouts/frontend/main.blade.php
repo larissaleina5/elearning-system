@@ -58,7 +58,7 @@
       <div class="offcanvas__menu">
         <div class="offcanvas-menu">
           <ul>
-            <li><a href="index.html">Dashboard</a>
+            <li><a href="{{ route('admin.dashboard') }}">Dashboard</a>
             </li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Service</a>

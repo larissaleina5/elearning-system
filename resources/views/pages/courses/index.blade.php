@@ -15,7 +15,7 @@ List of courses
         <h2 class="breadcrumb__title">Browse Courses</h2>
         <ul class="breadcrumb__menu">
                 <li><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i></li>
-            <li><a href="#">Page</a><i class="fa-solid fa-chevron-right"></i></li>
+            <li><a href="">Page</a><i class="fa-solid fa-chevron-right"></i></li>
           <li><a href="#">Browse Courses</a></li>
         </ul>
       </div>
@@ -274,11 +274,11 @@ List of courses
 
 
                         <div class="course__grid-3">
-                            @foreach($courseIsPost as $course)
-                                <div class="course__item-2">
-                                <div class="course__img-3">
-                                    <img src="{{ Storage::url($course->course_profile) }}" alt="Image">
-                                    <span class="course__priceTitle">$49.00</span>
+                            @foreach($courses as $course)
+                                <div class="">
+                                <div class="">
+                                    <a href="{{ route('details.course',$course->id) }}"> <img   style="width:250px" src="{{ Storage::url($course->course_profile) }}" alt="Image"/></a>
+                                    <span class="course__priceTitle">Free</span>
                                 </div>
                                 <div class="course__content-4">
                                     <div class="course__category-3">
@@ -300,7 +300,13 @@ List of courses
                                 </div>
                                 <div class="course__btm3">
                                         <img src="{{ asset('assets/imgs/inner-2/course/author.png') }}" alt="Image">
-                                        <span>Jerome Bell</span>
+
+                                        @foreach ($users as $user)
+                                            @if ($user->id===$course->user_id)
+                                        <span>{{ $user->name}}</span>
+                                            @endif
+                                        @endforeach
+
                                 </div>
                                 </div>
                             </div>

@@ -7,8 +7,8 @@ FAQ
 
      <!-- breadcrumb area  -->
      <div class="breadcrumb__area">
-      <img class="shape-2" src="assets/imgs/inner/bradcrumb-shape-2.png" alt="shape-1">
-      <img class="shape-3"  src="assets/imgs/inner/dotted-1.png" alt="shape-1">
+      <img class="shape-2" src="{{ asset('assets/imgs/inner/bradcrumb-shape-2.png') }}" alt="shape-1">
+      <img class="shape-3"  src="{{ asset('assets/imgs/inner/dotted-1.png') }}" alt="shape-1">
       <div class="container">
         <h2 class="breadcrumb__title">Faq Page</h2>
         <ul class="breadcrumb__menu">
@@ -297,21 +297,21 @@ FAQ
             <h2 class="online__title">Ready to dive in? Start You <br>r Free Course today.</h2>
             <p>Architect client-centered total linkage for intuitive benefits. Dynamically restore convergence before s <br> total linkage for intuitive benefits restore convergence before real-time.</p>
             <div class="teampage__whybtnwrapper">
-              <a href="about.html" class="btn-ractangle-2">Become a Instructor <img src="assets/imgs/home-1/arrow.png" alt=""></a>
-              <a href="about.html" class="btn-ractangle-2">Become a Partner <img src="assets/imgs/home-1/arrow.png" alt=""></a>
+              <a href="about.html" class="btn-ractangle-2">Become a Instructor <img src="{{ asset('assets/imgs/home-1/arrow.png') }}" alt=""></a>
+              <a href="about.html" class="btn-ractangle-2">Become a Partner <img src="{{ asset('assets/imgs/home-1/arrow.png') }}" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Why area end  -->  
+    <!-- Why area end  -->
 
     <!-- faq contact  -->
     <div class="faq__contact">
       <div class="container">
         <div class="faq__contactwrapper">
           <div class="faq__thumb">
-            <img src="assets/imgs/inner/faq-contact.jpg" alt="thumb">
+            <img src="{{ asset('assets/imgs/inner/faq-contact.jpg') }}" alt="thumb">
           </div>
           <div class="eduquest__contact">
             <h4 class="teamDetails__title">Request A Quote For Study</h4>
