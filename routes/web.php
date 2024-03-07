@@ -14,6 +14,7 @@ use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\StudetailsController;
 use App\Http\Controllers\EnliststudentController;
 use App\Http\Controllers\Teacher\CourseController;
+use App\Http\Controllers\Teacher\LessonController;
 use App\Http\Controllers\Frontend\CourseController as FrontendCourseController;
 use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
 use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardController;
@@ -62,6 +63,9 @@ Route::get('/teacher/dashboard',[TeacherDashboardController::class,'lecturer'])-
 Route::get('/teacher/courses',[CourseController::class,'list'])->name('teach.courses');
 Route::get('/teacher/course/create',[CourseController::class,'create'])->name('teach.createcourse');
 Route::post('/teacher/course/add',[CourseController::class,'store'])->name('teach.createstore');
+Route::get('lesson/create/{id}',[LessonController::class,'create'])->name('teacher.create.lessons');
+Route::post('lesson/create/{id}',[LessonController::class,'store'])->name('teacher.lesson.store');
+Route::get('lesson/list',[LessonController::class,'list'])->name('teachers.lessons');
 
 });
 Route::middleware('auth')->group(function (){

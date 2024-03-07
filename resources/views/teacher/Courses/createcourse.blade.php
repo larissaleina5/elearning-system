@@ -12,7 +12,7 @@
                         <h5 class="mb-0">New Course</h5>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('teach.createstore') }}" method="post" enctype="multipart/form-data">
+                        <form action="{{route('teach.create') }}" method="post" enctype="multipart/form-data">
                             @csrf
 
                             <div class="row">
