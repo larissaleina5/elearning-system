@@ -18,6 +18,7 @@ class TeacherController extends Controller
 public function addTeacher(){
     return view('teacher.create');
 }
+
 public function storeTeacher(TeacherRequest  $request){
 
     $user=User::create([

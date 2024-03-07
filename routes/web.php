@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
@@ -11,9 +12,8 @@ use App\Http\Controllers\EmployteaController;
 use App\Http\Controllers\TeadetailController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\StudetailsController;
-use App\Http\Controllers\Admin\CourseController;
-use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\EnliststudentController;
+use App\Http\Controllers\Teacher\CourseController;
 use App\Http\Controllers\Frontend\CourseController as FrontendCourseController;
 use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
 use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardController;
@@ -58,7 +58,11 @@ Route::middleware("student",'auth')->group(function(){
 Route::get('/student/dashboard',[StudentDashboardController::class,'index'])->name('student.dashboard');
 });
 Route::middleware("teacher",'auth')->group(function(){
-Route::get('/teacher/dashboard',[TeacherDashboardController::class,'index'])->name('teacher.dashboard');
+Route::get('/teacher/dashboard',[TeacherDashboardController::class,'lecturer'])->name('teacher.dashboard');
+Route::get('/teacher/courses',[CourseController::class,'list'])->name('teach.courses');
+Route::get('/teacher/course/create',[CourseController::class,'create'])->name('teach.createcourse');
+Route::post('/teacher/course/add',[CourseController::class,'store'])->name('teach.createstore');
+
 });
 Route::middleware('auth')->group(function (){
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
