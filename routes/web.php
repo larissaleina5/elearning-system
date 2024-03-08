@@ -63,9 +63,13 @@ Route::get('/teacher/dashboard',[TeacherDashboardController::class,'lecturer'])-
 Route::get('/teacher/courses',[CourseController::class,'list'])->name('teach.courses');
 Route::get('/teacher/course/create',[CourseController::class,'create'])->name('teach.createcourse');
 Route::post('/teacher/course/add',[CourseController::class,'store'])->name('teach.createstore');
+
 Route::get('lesson/create/{id}',[LessonController::class,'create'])->name('teacher.create.lessons');
 Route::post('lesson/create/{id}',[LessonController::class,'store'])->name('teacher.lesson.store');
-Route::get('lesson/list',[LessonController::class,'list'])->name('teachers.lessons');
+Route::get('lesson/list',[LessonController::class,'list'])->name('teacher.lessons.listlesson');
+Route::get('lesson/edit/{id}',[LessonController::class,'edit'])->name('teacher.lesson.edit');
+Route::put('update/lesson/{id}',[LessonController::class,'update'])->name('teacher.lesson.update');
+Route::delete('/delete/lesson/{id}',[TeacherController::class,'delete'])->name('teacher.lesson.delete');
 
 });
 Route::middleware('auth')->group(function (){
