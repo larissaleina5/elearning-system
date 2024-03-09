@@ -21,6 +21,7 @@ return new class extends Migration
             ->constrained()
             ->restrictOnUpdate()
             ->restrictOnDelete();
+            $table->string("slug");
             $table->string('lesson_video');
             $table->timestamps();
         });

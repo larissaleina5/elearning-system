@@ -13,7 +13,8 @@ class CourseController extends Controller
     public function index(){
         $courses=Course::all();
         $users=User::all();
-        return view('pages.courses.index',compact('courses','users'));
+        $categories=Category::all();
+        return view('pages.courses.index',compact('courses','users','categories'));
     }
     public function details(){
         $courseIsPopular=Course::where('isPopular',1)->first();

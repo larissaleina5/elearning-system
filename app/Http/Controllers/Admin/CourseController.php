@@ -40,6 +40,7 @@ class CourseController extends Controller
         $course->user_id=$request->teacher_id;
         $course->category_id=$request->category_id;
         $course->level=$request->level;
+        $course->slug=$this->slugify($request->name);
         if($request->status==='on'){
             $course->status=1;
         }else{
@@ -91,5 +92,17 @@ return view('admin.courses.edit',compact('courses'));
         $course=Course::find($id);
         $course->delete();
         return back();
+    }
+
+    function slugify($string, $delimiter = '-') {
+        $oldLocale = setlocale(LC_ALL, '0');
+        setlocale(LC_ALL, 'en_US.UTF-8');
+        $clean = iconv('UTF-8', 'ASCII//TRANSLIT', $string);
+        $clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $clean);
+        $clean = strtolower($clean);
+        $clean = preg_replace("/[\/_|+ -]+/", $delimiter, $clean);
+        $clean = trim($clean, $delimiter);
+        setlocale(LC_ALL, $oldLocale);
+        return $clean;
     }
 }

@@ -33,7 +33,7 @@ use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardControll
 
 Route::get('user/{id}',[StudentController::class,'show']);
 Route::get('/all/courses',[FrontendCourseController::class,'index'])->name('front.courses');
-Route::get('details/courses/{id}',[FrontendCourseController::class,'details'])->name('details.course');
+Route::get('details/courses/{name}',[FrontendCourseController::class,'details'])->name('details.course');
 
 
 
