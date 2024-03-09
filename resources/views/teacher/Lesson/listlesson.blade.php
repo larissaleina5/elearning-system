@@ -45,10 +45,10 @@ List of Lessons
                                         <th>
                                             <input type="checkbox" class="form-check-input" id="checkAll" required="">
                                         </th>
-                                        <th>Lesson tiile</th>
-                                        <th>Lesson content</th>
-                                        <th>Lesson Descrption</th>
-                                        <th>Lesson type </th>
+                                        <th>Capture</th>
+                                        <th>Lesson title</th>
+
+
                                         <th class="text-end">Action</th>
                                     </tr>
                                 </thead>
@@ -67,25 +67,16 @@ List of Lessons
                                         </td>
                                         <td>
                                             <div class="trans-list">
-                                                <img src="{{ Storage::url($lesson->lesson_profile) }}" alt="" class="avatar me-3">
-                                                <h4>{{ $lesson->lesson_title }}</h4>
+                                                <video src="{{ Storage::url($lesson->lesson_video) }}" alt="" class="avatar me-3">
+
                                             </div>
                                         </td>
                                         <td>
-                                            <span class="text-primary font-w600">{{ $lesson->lesson_content }}</span>
-                                        </td>
-                                        <td>
-                                            <span class="text-primary font-w600">{{ $lesson->lesson_description }}</span>
+                                            <h4>{{ $lesson->lesson_title }}</h4>
                                         </td>
 
-                                        <td>
 
-                                            <td>
-                                                <span class="text-primary font-w600">{{ $lesson->lesson_type }}</span>
-                                            </td>
 
-                                            <div class="date">{{ $lesson->status }}</div>
-                                        </td>
                                         <td>
                                             <div class="d-flex">
                                                 <div class="icon-box icon-box-sm bg-light me-2">
@@ -104,7 +95,8 @@ List of Lessons
                                                     @method('DELETE')
 
                                                 </form>
-
+                                                <a class="btn btn-primary" href="">Create Test</a>
+                                                <a class="btn btn-primary" href="">View Lesson</a>
                                         </td>
 
                                     </tr>

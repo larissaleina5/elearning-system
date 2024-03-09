@@ -11,9 +11,9 @@ class LessonController extends Controller
     public function create($id){
         return view('teacher.Lesson.createlesson', compact('id'));
     }
-    public function list($id){
-        $lessons=Lesson::all();
-        return $id;
+    public function list(Request $request){
+        $lessons=Lesson::where('course_id',$r)
+        return view('teacher.Lesson.listlesson',compact('lessons'));
     }
 
 public function store(Request $request, $id){
