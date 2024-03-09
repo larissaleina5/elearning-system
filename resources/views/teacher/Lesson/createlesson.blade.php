@@ -23,27 +23,17 @@
 
                                             <div class="mb-3">
                                                     <label for="exampleFormControlInput1" class="form-label text-primary">Lesson Title<span class="required">*</span></label>
-                                                <input type="text" class="form-control" name="lesson_title" id="exampleFormControlInput1">
+                                                <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="lesson_title" id="exampleFormControlInput1">
                                                 @error('name')
                                                         <p class="text-danger">{{ $message }}</p>
                                                 @enderror
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlTextarea1" class="form-label">Lesson Content</label>
-                                                <textarea class="form-control" name="lesson_content" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
-                                            <div id="quill-editor" class="mb-3" style="height: 300px;"></div>
-                                            <textarea rows="3" class="mb-3 d-none" name="lesson_content" id="quill-editor-area"></textarea>
 
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlTextarea1" class="form-label">Lesson Description</label>
-                                                <textarea class="form-control" name="lesson_description" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
+
+
+
                                             <input type="hidden" name="course_id" value="{{ $id }}"/>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlTextarea1" class="form-label">Lesson Type</label>
-                                                <textarea class="form-control" name="lesson_type" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
+
                                     </div>
                             </div>
                         </div>
@@ -57,11 +47,16 @@
                     <h5 class="mb-0">Course Details</h5>
                 </div>
                 <div class="card-body">
-                            <div class="">
+
+                    <div class="col-xl-12 col-sm-12">
+
+                            <div class="mb-2">
                                 <i class="fas fa-file"></i>
 
-                                <input type="file" name="course_profile" required>
+                                <input class="form-control" type="file" name="lesson_video" required>
                             </div>
+                            <div id="quill-editor" class="mb-3 " style="height: 300px;"></div>
+                            <textarea rows="3" class="mb-3 mt-3 d-none" name="lesson_content" id="quill-editor-area"></textarea>
                             </div>
                         </div>
 
