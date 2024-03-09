@@ -20,10 +20,9 @@ public function store(Request $request, $id){
 
     $lesson=new Lesson;
     $lesson->lesson_title=$request->lesson_title;
-    $lesson->lesson_content=$request->lesson_content;
+    $lesson->lesson_content=htmlspecialchars($request->lesson_content);
     $lesson->lesson_description=$request->lesson_description;
     $lesson->course_id=$request->course_id;
-    $lesson->lesson_type=$request->lesson_type;
     $lesson->save();
     return to_route('teacher.lesson.store',compact('id'));
 

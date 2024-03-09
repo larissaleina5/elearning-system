@@ -56,7 +56,7 @@
                     <button class="search-close"><i class="fa-solid fa-xmark"></i></button>
                   </div>
 
-                  @if(auth()->user())
+                  @if(empty(auth()->user()))
                     <div class="header__btn">
                         <a href="{{ route('login') }}" class="btn-ractangle">Login</a>
                     </div>

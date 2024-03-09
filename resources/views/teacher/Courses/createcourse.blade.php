@@ -22,7 +22,7 @@
 
                                             <div class="mb-3">
                                                     <label for="exampleFormControlInput1" class="form-label text-primary"> Course Name<span class="required">*</span></label>
-                                                <input type="text" class="form-control" name="name" id="exampleFormControlInput1">
+                                                <input type="text" class="form-control" style="width:100%; height:20px; font-size:20px" name="name" id="exampleFormControlInput1">
                                                 @error('name')
                                                         <p class="text-danger">{{ $message }}</p>
                                                 @enderror
