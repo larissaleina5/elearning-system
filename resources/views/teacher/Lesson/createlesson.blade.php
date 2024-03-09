@@ -53,7 +53,7 @@
                             <div class="mb-2">
                                 <i class="fas fa-file"></i>
 
-                                <input class="form-control" type="file" name="course_profile" required>
+                                <input class="form-control" type="file" name="lesson_video" required>
                             </div>
                             <div id="quill-editor" class="mb-3 " style="height: 300px;"></div>
                             <textarea rows="3" class="mb-3 mt-3 d-none" name="lesson_content" id="quill-editor-area"></textarea>

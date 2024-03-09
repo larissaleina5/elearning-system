@@ -96,7 +96,7 @@ List of Lessons
 
                                                 </form>
                                                 <a class="btn btn-primary" href="">Create Test</a>
-                                                <a class="btn btn-primary" href="">View Lesson</a>
+                                                <a class="btn btn-primary" style="margin-left: 12px" href="">View Lesson</a>
                                         </td>
 
                                     </tr>

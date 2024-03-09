@@ -11,8 +11,8 @@ class LessonController extends Controller
     public function create($id){
         return view('teacher.Lesson.createlesson', compact('id'));
     }
-    public function list(Request $request){
-        $lessons=Lesson::where('course_id',$r)
+    public function list($id){
+        $lessons=Lesson::where('course_id',$id)->get();
         return view('teacher.Lesson.listlesson',compact('lessons'));
     }
 
@@ -25,7 +25,7 @@ public function store(Request $request, $id){
     $video_path = $request->lesson_video->store('lessons', 'public');
         $lesson->lesson_video=$video_path;
     $lesson->save();
-    return to_route('teacher.lessons.listlesson',compact('id'));
+    return to_route('teacher.lessons.listlesson',$id);
 
 }
 public function edit($id){

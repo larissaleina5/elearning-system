@@ -66,7 +66,7 @@ Route::post('/teacher/course/add',[CourseController::class,'store'])->name('teac
 
 Route::get('lesson/create/{id}',[LessonController::class,'create'])->name('teacher.create.lessons');
 Route::post('lesson/create/{id}',[LessonController::class,'store'])->name('teacher.lesson.store');
-Route::get('lesson/list',[LessonController::class,'list'])->name('teacher.lessons.listlesson');
+Route::get('lesson/list/{id}',[LessonController::class,'list'])->name('teacher.lessons.listlesson');
 Route::get('lesson/edit/{id}',[LessonController::class,'edit'])->name('teacher.lesson.edit');
 Route::put('update/lesson/{id}',[LessonController::class,'update'])->name('teacher.lesson.update');
 Route::delete('/delete/lesson/{id}',[TeacherController::class,'delete'])->name('teacher.lesson.delete');
