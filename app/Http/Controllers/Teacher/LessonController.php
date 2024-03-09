@@ -13,7 +13,7 @@ class LessonController extends Controller
     }
     public function list($id){
         $lessons=Lesson::where('course_id',$id)->get();
-        return view('teacher.Lesson.listlesson',compact('lessons'));
+        return view('teacher.Lesson.listlesson',compact('lessons','id'));
     }
 
 public function store(Request $request, $id){

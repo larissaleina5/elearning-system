@@ -31,8 +31,8 @@ List of Lessons
                                     <option value="2">Recent</option>
                                 </select>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+ New teacher
-                            </button>
+                                <a class="btn btn-primary" href="{{ route('teacher.create.lessons',$id) }}">+ New Lesson
+                                </a>
                             </div>
                         </div>
                     </div>
