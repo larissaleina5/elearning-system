@@ -2270,7 +2270,7 @@ Wallet Sidebar
 			<script src="{{ asset('assets/js/dlabnav-init.js') }}"></script>
 			<script src="{{asset('assets/js/custom.min.js')}}"></script>
 			<script src="{{ asset('assets/js/demo.js') }}"></script>
-			<script src="public/assets/js/styleSwitcher.js"></script>
+			<script src="{{ asset('') }}"></script>
 		<script>
 jQuery(document).ready(function(){
 		setTimeout(function(){
