@@ -33,13 +33,22 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'password' => ['required', 'confirmed'],
+            "profile"=>['required','image','mimes:jpeg,jpg,pngchose']
         ]);
+        //$request->file("profile")
+        $image_path="";
+        if(isset($request->profile)){
 
+            $image_path = $request->profile->store('profile', 'public');
+        }else{
+            $image_path='assets/imgs/home-1/profile.png';
+        }
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'profile'=>$image_path,
             'role_id'=>2,
             'phone'=>$request->phone
         ]);
@@ -48,6 +57,6 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect('student/dashboard');
     }
 }

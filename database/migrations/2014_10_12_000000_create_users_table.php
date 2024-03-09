@@ -23,7 +23,8 @@ return new class extends Migration
             ->restrictOnDelete();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('phone');
+            $table->string('profile')->default('assets/imgs/home-1/profile.png');
+            $table->string('phone');
             $table->rememberToken();
             $table->timestamps();
         });

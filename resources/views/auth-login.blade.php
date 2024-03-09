@@ -10,10 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
-  <div class="container">
+<div class="container">
     <input type="checkbox" id="flip">
     <div class="cover">
-      <div class="front">
+    <div class="front">
         <img src="{{asset('assets/imgs/home-1/blog-3.jpg')}}" alt="">
         <div class="text">
           <span class="text-1">Every new friend is a <br> new adventure</span>
@@ -53,7 +53,7 @@
       </div>
         <div class="signup-form" >
           <div class="title">Signup</div>
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
           @csrf
             <div class="input-boxes">
               <div class="input-box">
@@ -75,6 +75,11 @@
               <div class="input-box">
                 <i class="fas fa-lock"></i>
                 <input type="password"name="password_confirmation"  placeholder="confirm your password"required>
+              </div>
+              <div class="">
+                <i class="fas fa-file"></i>
+
+                <input type="file" name="profile" required>
               </div>
               <div class="button input-box">
                 <input type="submit" value="Sumbit">

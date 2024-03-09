@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Proposition;
+use App\Models\Question;
 use App\Models\Quiz;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,7 +16,7 @@ return new class extends Migration
     {
         Schema::create('question_propositions', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Quiz::class)
+            $table->foreignIdFor(Question::class)
             ->constrained()
             ->cascadeOnUpdate()
             ->cascadeOnDelete();

@@ -26,6 +26,10 @@ return new class extends Migration
             ->constrained()
             ->restrictOnUpdate()
             ->restrictOnDelete();
+            $table->string("level");
+            $table->boolean('status');
+            $table->string('course_profile');
+            $table->boolean('isPopular')->default(0);
             $table->boolean('isPayable')->default(0);
             $table->timestamps();
         });
