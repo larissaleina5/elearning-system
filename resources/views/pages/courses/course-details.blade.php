@@ -79,7 +79,7 @@
                       @foreach ($course->lessons as $index=>$lesson)
                       <div class="accordion-item">
                         <h2 class="course__sidebarTitle" id="flush-headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ $index }}" aria-expanded="false" aria-controls="flush-collapse{{ $index }}">
                             <div class="course__headerfaq">
                               <div class="course__headerfaqleft">
                                 <span>Module</span>
@@ -97,7 +97,7 @@
                             </div>
                           </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse{{ $index }}" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">
                             <ul class="course__lecturelist">
                               <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture 1.1 </span><span class="lecture">UI UX Fundamental & Figma Intro</span></li>
