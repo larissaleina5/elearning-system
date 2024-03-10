@@ -36,9 +36,9 @@ return $this->belongsToMany(User::class);
         return $this->hasMany(Payment::class);
     }
 
-    public function lessons():BelongsToMany{
+    public function lessons():HasMany{
 
-        return $this->belongsToMany(Lesson::class);
+        return $this->hasMany(Lesson::class);
     }
 
 }

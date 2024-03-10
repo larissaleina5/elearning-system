@@ -76,7 +76,7 @@ Course Details
                     </ul>
                   </div>
                   <div class="accordion accordion-flush" id="accordionFlushExample">
-                      @foreach ($course->lessons as $index=>$ingredient)
+                      @foreach ($course->lessons as $index=>$lesson)
                       <div class="accordion-item">
                         <h2 class="course__sidebarTitle" id="flush-headingTwo">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -86,7 +86,7 @@ Course Details
                                 <h2 class="course__headercount">02</h2>
                               </div>
                               <div class="right">
-                                <h2 class="course__headerfaqtitle">Brainstorming on Problem Solving</h2>
+                                <h2 class="course__headerfaqtitle">{{ $lesson->lesson_title }}</h2>
                                 <ul class="course__headercate">
                                   <li> <img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> 30Module</li>
                                   <li> <img src="{{ asset('assets/imgs/inner/icon-2.png') }}" alt="icon"> 4 Live class</li>

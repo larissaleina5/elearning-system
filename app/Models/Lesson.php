@@ -21,8 +21,8 @@ class Lesson extends Model
     public function result():HasMany{
         return $this->hasMany(Result::class);
     }
-    public function courses():BelongsToMany{
-        return $this->belongsToMany(Course::class);
+    public function course():BelongsTo{
+        return $this->belongsTo(Course::class);
     }
     public function quizes():BelongsToMany{
         return $this->belongsToMany(Quiz::class);
