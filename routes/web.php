@@ -65,7 +65,7 @@ Route::get('/teacher/courses',[CourseController::class,'list'])->name('teach.cou
 Route::get('/teacher/course/create',[CourseController::class,'create'])->name('teach.createcourse');
 Route::post('/teacher/course/add',[CourseController::class,'store'])->name('teach.createstore');
 
-Route::get('lesson/create/{id}',[LessonController::class,'create'])->name('teacher.create.lessons');
+Route::get('create/lesson/{id}',[LessonController::class,'create'])->name('teacher.create.lessons');
 Route::post('lesson/create/{id}',[LessonController::class,'store'])->name('teacher.lesson.store');
 Route::get('/list/lesson/{id}',[LessonController::class,'list'])->name('teacher.lessons.listlesson');
 Route::get('lesson/edit/{id}',[LessonController::class,'edit'])->name('teacher.lesson.edit');
