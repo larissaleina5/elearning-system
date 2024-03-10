@@ -27,4 +27,9 @@ class Lesson extends Model
     public function quizes():BelongsToMany{
         return $this->belongsToMany(Quiz::class);
     }
+
+    public function chapters():HasMany{
+
+        return $this->hasMany(Chapter::class);
+    }
 }

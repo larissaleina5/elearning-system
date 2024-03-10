@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Teacher;
 use App\Models\Lesson;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Chapter;
 
 class LessonController extends Controller
 {
@@ -25,6 +26,13 @@ public function store(Request $request, $id){
     $video_path = $request->lesson_video->store('lessons', 'public');
         $lesson->lesson_video=$video_path;
     $lesson->save();
+
+    foreach($request->chapters as $chapter){
+        $chapter=new Chapter;
+        $chapter->lesson_id=$chapter->chapter_title;
+        $chapter->save();
+    }
+
     return to_route('teacher.lessons.listlesson',$id);
 
 }
