@@ -16,6 +16,7 @@ class CourseSeeder extends Seeder
     {
         Course::create([
             'course_name'=>'Introduction to Software Engineering',
+            'slug'=>'introduction-to-software-engineering',
             "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
             "user_id"=>3,
             "category_id"=>1,
@@ -27,6 +28,7 @@ class CourseSeeder extends Seeder
 
     Course::create([
             'course_name'=>'Software Development Lifecycle',
+            'slug'=>'software-development-lifecycle',
             "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
             "user_id"=>3,
             'isPopular'=>0,
@@ -38,6 +40,7 @@ class CourseSeeder extends Seeder
 
                     Course::create([
                         'course_name'=>'Master of Science in Software Engineering',
+                        'slug'=>'master-of-science-in-software-engineering',
                         "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                         "user_id"=>3,
                         'isPopular'=>1,
@@ -49,6 +52,7 @@ class CourseSeeder extends Seeder
 
                                 Course::create([
                                     'course_name'=>'Doctor of Natural Medicine',
+                                    'slug'=>'doctor-of-natural-medicine',
                                     'isPopular'=>1,
                                     "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                                     "user_id"=>3,
@@ -60,6 +64,7 @@ class CourseSeeder extends Seeder
 
                                             Course::create([
                                                 'course_name'=>'Doctor of Naturopathic Medicine Advanced Diploma',
+                                                'slug'=>'doctor-of-naturopathic-medicine-advanced-diploma',
                                                 'isPopular'=>0,
                                                 "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                                                 "user_id"=>3,
@@ -71,6 +76,7 @@ class CourseSeeder extends Seeder
 
                                                         Course::create([
                                                             'course_name'=>'React Native: Mobile App Development in 2024',
+                                                            'slug'=>'react-native-mobile-development-in-2024',
                                                             'isPopular'=>0,
                                                             "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
                                                             "user_id"=>3,
@@ -83,6 +89,7 @@ class CourseSeeder extends Seeder
                                                                     Course::create([
                                                                         'course_name'=>'Flutter & Dart Essentials-Build Mobile Apps like a Pro',
                                                                         "course_description"=>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni officiis expedita neque praesentium quos ea sed voluptates hic repellat distinctio dignissimos maxime fugit repudiandae cum ipsam delectus, perspiciatis quidem.",
+                                                                        'slug'=>'flutter-dart-essebtials-build-mobile-apps-like-a-pro',
                                                                         "user_id"=>3,
                                                                         'isPopular'=>0,
                                                                         "category_id"=>3,

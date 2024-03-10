@@ -6,6 +6,7 @@ use App\Models\Lesson;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Chapter;
+use App\Models\Course;
 
 class LessonController extends Controller
 {
@@ -14,7 +15,8 @@ class LessonController extends Controller
     }
     public function list($id){
         $lessons=Lesson::where('course_id',$id)->get();
-        return view('teacher.Lesson.listlesson',compact('lessons','id'));
+        $course=Course::find($id);
+        return view('teacher.Lesson.listlesson',compact('lessons','id','course'));
     }
 
 public function store(Request $request, $id){
