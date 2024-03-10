@@ -57,14 +57,17 @@
                             <div id="form"  class="mb-3 row">
                                 <div class="mb-3 col-6">
                                     <label for="exampleFormControlInput1" class="form-label text-primary">Proposition<span class="required">*</span></label>
-                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
+                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="propositions[]" id="exampleFormControlInput1">
 
 
 
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label for="exampleFormControlInput1" class="form-label text-primary">Proposition<span class="required">*</span></label>
-                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">IsGoodOrFalse<span class="required">*</span></label>
+                                    <select class="form-control" style="width:100%; height:50px; font-size:20px" name="isGoodOrFalse[]" id="">
+                                        <option value="1">True</option>
+                                        <option value="0">False</option>
+                                    </select>
 
 
 
@@ -73,7 +76,7 @@
 
                             </div>
 
-                            <button type="button" onclick="addIngredient()" class="btn bag-primary text-white" style="background-color: #c70609">Add Chapter</button>
+                            <button type="button" onclick="addTest()" class="btn bag-primary text-white" style="background-color: #c70609">Add Proposition Test</button>
                         </div>
 
 
@@ -92,36 +95,32 @@
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        if (document.getElementById('quill-editor-area')) {
-            var editor = new Quill('#quill-editor', {
-                theme: 'snow'
-            });
-            var quillEditor = document.getElementById('quill-editor-area');
-            editor.on('text-change', function() {
-                quillEditor.value = editor.root.innerHTML;
-            });
 
-            quillEditor.addEventListener('input', function() {
-                editor.root.innerHTML = quillEditor.value;
-            });
-        }
-    });
+
     let i = 0;
     let j = 1;
-    function addIngredient() {
+    function addTest() {
         i = i + 1;
         const newDiv = document.createElement(`div`);
-        newDiv.setAttribute('class', `col-6`);
+        newDiv.setAttribute('class', `row`);
         const div = document.getElementById('form');
-        newDiv.innerHTML = `
-
-            <label for="exampleFormControlInput1" class="form-label text-primary">Lesson Chapter<span class="required">*</span></label>
-                            <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
-
+        newDiv.innerHTML = `<div class="mb-3 col-6">
+        <label for="exampleFormControlInput1" class="form-label text-primary">Proposition<span class="required">*</span></label>
+                        <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="propositions[]" id="exampleFormControlInput1">
 
 
-      `
+
+    </div>
+    <div class="mb-3 col-6">
+        <label for="exampleFormControlInput1" class="form-label text-primary">IsGoodOrFalse<span class="required">*</span></label>
+        <select class="form-control" style="width:100%; height:50px; font-size:20px" name="isGoodOrFalse[]" id="">
+            <option value="1">True</option>
+            <option value="0">False</option>
+        </select>
+
+
+
+    </div>`
         div.appendChild(newDiv);
 
 
