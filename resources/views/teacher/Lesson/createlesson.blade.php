@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="col-xl-12">
-            <div class="card">
+            <div class="card" style="padding-bottom: 800px">
                 <div class="card-header">
                     <h5 class="mb-0">Course Details</h5>
                 </div>
@@ -55,9 +55,24 @@
 
                                 <input class="form-control" type="file" name="lesson_video" required>
                             </div>
+
                             <div id="quill-editor" class="mb-3 " style="height: 300px;"></div>
                             <textarea rows="3" class="mb-3 mt-3 d-none" name="lesson_content" id="quill-editor-area"></textarea>
                             </div>
+                            <div id="form"  class="mb-3 row">
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">Lesson Chapter<span class="required">*</span></label>
+                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
+
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <button type="button" onclick="addIngredient()" class="btn bag-primary text-white" style="background-color: #c70609">Add Chapter</button>
                         </div>
 
 
@@ -91,6 +106,25 @@
             });
         }
     });
+    let i = 0;
+    let j = 1;
+    function addIngredient() {
+        i = i + 1;
+        const newDiv = document.createElement(`div`);
+        newDiv.setAttribute('class', `col-6`);
+        const div = document.getElementById('form');
+        newDiv.innerHTML = `
+
+            <label for="exampleFormControlInput1" class="form-label text-primary">Lesson Chapter<span class="required">*</span></label>
+                            <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
+
+
+
+      `
+        div.appendChild(newDiv);
+
+
+    }
 </script>
 
 
