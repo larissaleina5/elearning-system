@@ -21,6 +21,7 @@ public function store(Request $request, $id){
 
     $lesson=new Lesson;
     $lesson->lesson_title=$request->lesson_title;
+    $lesson->lesson_slug=$this->slugify($request->lesson_title);
     $lesson->lesson_content=htmlspecialchars($request->lesson_content);
     $lesson->course_id=$request->course_id;
     $video_path = $request->lesson_video->store('lessons', 'public');
@@ -64,5 +65,17 @@ public function edit($id){
             $lesson=Lesson::find($id);
             $lesson->delete();
             return back();
+        }
+
+        function slugify($string, $delimiter = '-') {
+            $oldLocale = setlocale(LC_ALL, '0');
+            setlocale(LC_ALL, 'en_US.UTF-8');
+            $clean = iconv('UTF-8', 'ASCII//TRANSLIT', $string);
+            $clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $clean);
+            $clean = strtolower($clean);
+            $clean = preg_replace("/[\/_|+ -]+/", $delimiter, $clean);
+            $clean = trim($clean, $delimiter);
+            setlocale(LC_ALL, $oldLocale);
+            return $clean;
         }
 }

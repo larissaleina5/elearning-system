@@ -16,6 +16,7 @@ use App\Http\Controllers\EnliststudentController;
 use App\Http\Controllers\Teacher\CourseController;
 use App\Http\Controllers\Teacher\LessonController;
 use App\Http\Controllers\Frontend\CourseController as FrontendCourseController;
+use App\Http\Controllers\Frontend\LessonController as FrontendLessonController;
 use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
 use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardController;
 
@@ -34,7 +35,7 @@ use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardControll
 Route::get('user/{id}',[StudentController::class,'show']);
 Route::get('/all/courses',[FrontendCourseController::class,'index'])->name('front.courses');
 Route::get('details/courses/{name}',[FrontendCourseController::class,'details'])->name('details.course');
-
+Route::get('lesson/{course_name}/{lesson_name}',[FrontendLessonController::class,'show'])->name('details.lesson');
 
 
     Route::middleware("admin",'auth')->group(function(){

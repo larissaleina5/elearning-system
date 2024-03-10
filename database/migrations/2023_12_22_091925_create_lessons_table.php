@@ -23,6 +23,7 @@ return new class extends Migration
             ->restrictOnDelete();
             $table->string("slug");
             $table->string('lesson_video');
+            $table->string('lesson_slug');
             $table->timestamps();
         });
     }

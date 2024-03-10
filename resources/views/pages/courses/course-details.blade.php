@@ -170,8 +170,7 @@
                     <li>Students 340</li>
                     <li>Assessments Yes</li>
                   </ul>
-                  <button class="course__btnenroll">Enroll Now</button>
-                  <button class="course__addtocart">Add to Cart</button>
+                  <a href="{{ route('details.lesson',['course_name'=>$course->course_name,'lesson_name'=>$course->lessons[0]['lesson_title']]) }}" class="course__btnenroll">Get Started</a>
                   <span class="course__gtitle">30 Day Money Back Gurantee</span>
                 </div>
                 <div class="course__recentPost">
