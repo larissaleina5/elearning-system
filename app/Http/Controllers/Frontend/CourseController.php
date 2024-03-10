@@ -16,11 +16,10 @@ class CourseController extends Controller
         $categories=Category::all();
         return view('pages.courses.index',compact('courses','users','categories'));
     }
-    public function details(){
-        $courseIsPopular=Course::where('isPopular',1)->first();
-        $courseIsPost=Course::where('status',1)->take(2)->inRandomOrder()->get();
+    public function details($name){
+        $course=Course::where('course_name',$name)->first();
         $categories=Category::all();
-        return view('pages.courses.course-details',compact('courseIsPopular','courseIsPost','categories'));
+        return view('pages.courses.course-details',compact('course','categories'));
     }
 
 }
