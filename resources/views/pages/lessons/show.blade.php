@@ -1,13 +1,13 @@
 @extends('layouts.frontend.main')
 @section('title')
-{{ $course->course_name }}
+Course Details
 @endsection
 @section('content')
 <main>
 
     <!-- breadcrumb area  -->
     <div class="breadcrumb__area">
-    <img class="shape-2" src="" alt="shape-1">
+    <img class="shape-2" src="{{ asset('assets/imgs/inner/bradcrumb-shape-2.png') }}" alt="shape-1">
     <img class="shape-3"  src="{{ asset('assets/imgs/inner/dotted-1.png') }}" alt="shape-1">
     <div class="container">
       <h2 class="breadcrumb__title">Courses Details</h2>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="course__detailsCategory">
                           <span>Category :</span>
-                          <p>{{ $course->category->category_name }} </p>
+                          <p>category->category_name </p>
                         </div>
                         <div class="course__detailsReview">
                           <span>20 Reviews:</span> <br>
