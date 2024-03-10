@@ -19,6 +19,7 @@ use App\Http\Controllers\Frontend\CourseController as FrontendCourseController;
 use App\Http\Controllers\Frontend\LessonController as FrontendLessonController;
 use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
 use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardController;
+use App\Http\Controllers\Teacher\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,6 +72,7 @@ Route::get('/list/lesson/{id}',[LessonController::class,'list'])->name('teacher.
 Route::get('lesson/edit/{id}',[LessonController::class,'edit'])->name('teacher.lesson.edit');
 Route::put('update/lesson/{id}',[LessonController::class,'update'])->name('teacher.lesson.update');
 Route::delete('/delete/lesson/{id}',[TeacherController::class,'delete'])->name('teacher.lesson.delete');
+Route::get('create/test/{id}',[TestController::class,'create'])->name('teacher.create.test');
 
 });
 Route::middleware('auth')->group(function (){
