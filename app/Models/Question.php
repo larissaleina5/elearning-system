@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Quiz;
+use App\Models\Lesson;
 use App\Models\Proposition;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -15,7 +16,7 @@ class Question extends Model
     public function propositions():BelongsToMany{
         return $this->belongsToMany(Proposition::class)->withPivot('isGoodOrFalse');
     }
-    public function quizes():BelongsToMany{
-        return $this->belongsToMany(Quiz::class);
+    public function lesson():BelongsTo{
+        return $this->belongsTo(Lesson::class);
     }
 }

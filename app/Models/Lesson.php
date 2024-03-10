@@ -5,12 +5,13 @@ namespace App\Models;
 use App\Models\Quiz;
 use App\Models\Course;
 use App\Models\Result;
+use App\Models\Question;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Lesson extends Model
 {
@@ -31,5 +32,9 @@ class Lesson extends Model
     public function chapters():HasMany{
 
         return $this->hasMany(Chapter::class);
+    }
+
+    public function questions():HasMany{
+        return $this->hasMany(Question::class);
     }
 }
