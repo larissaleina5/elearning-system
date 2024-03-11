@@ -10,9 +10,9 @@ use App\Models\Lesson;
 
 class LessonController extends Controller
 {
-    public function show($course_name,$lesson_name){
-        $course=Course::where('course_name',$course_name)->first();
-       $lesson=Lesson::where('lesson_title',$lesson_name)->first();
+    public function show($course_slug,$lesson_slug){
+        $course=Course::where('slug',$course_slug)->first();
+       $lesson=Lesson::where('slug',$lesson_slug)->first();
        $categories=Category::all();
         return view('pages.lessons.show',compact('course','lesson','categories'));
     }

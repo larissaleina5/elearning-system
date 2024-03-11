@@ -170,7 +170,7 @@
                     <li>Students 340</li>
                     <li>Assessments Yes</li>
                   </ul>
-                  <a href="{{ route('details.lesson',['course_name'=>$course->course_name,'lesson_name'=>$course->lessons[0]['lesson_title']]) }}" class="course__btnenroll">Get Started</a>
+                  <a href="{{ route('details.lesson',['course_name'=>$course->slug,'lesson_name'=>$course->lessons[0]['slug']]) }}" class="course__btnenroll">Get Started</a>
                   <span class="course__gtitle">30 Day Money Back Gurantee</span>
                 </div>
                 <div class="course__recentPost">
