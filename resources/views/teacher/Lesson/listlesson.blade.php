@@ -96,6 +96,7 @@ List of Lessons
 
                                                 </form>
                                                 <a class="btn btn-primary" href="{{ route('teacher.create.test',$lesson->id) }}">Create Test</a>
+                                                <a class="btn btn-primary" style="margin-left: 12px" href="{{ route('teacher.list.tests',$lesson->id) }}">View Test</a>
                                                 <a class="btn btn-primary" style="margin-left: 12px" href="{{ route('details.lesson',['course_name'=>$course->slug,'lesson_name'=>$lesson->slug]) }}">View Lesson</a>
                                         </td>
 

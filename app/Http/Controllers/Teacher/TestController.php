@@ -12,7 +12,7 @@ class TestController extends Controller
 
     public function index($id){
         $tests=Question::where('lesson_id',$id)->get();
-        return view('teacher.quizz.index',compact('id'));
+        return view('teacher.quizz.index',compact('id','tests'));
     }
     public function create($id){
 
