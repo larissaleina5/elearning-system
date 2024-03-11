@@ -98,6 +98,18 @@ class CourseSeeder extends Seeder
                                                                         "course_profile"=>"course/flutter.jpg",
                                                                                 ]);
 
+                                                                                Course::create([
+                                                                                    'course_name'=>'Learn HTML',
+                                                                                    "course_description"=>"Fun fact: all websites use HTML — even this one. It’s a fundamental part of every web developer’s toolkit. HTML provides the content that gives web pages structure, by using elements and tags, you can add text, images, videos, forms, and more. Learning HTML basics is an important first step in your web development journey and an essential skill for front- and back-end developers.",
+                                                                                    'slug'=>'learn-html',
+                                                                                    "user_id"=>2,
+                                                                                    'isPopular'=>0,
+                                                                                    "category_id"=>1,
+                                                                                    "level"=>"Novice",
+                                                                                    "status"=>1,
+                                                                                    "course_profile"=>"course/LBUjI0MB2WnOZae2SviphxrTfgzCX4WqaNBPKFzM.png",
+                                                                                            ]);
+
 
     }
 }
