@@ -73,6 +73,7 @@ Route::get('lesson/edit/{id}',[LessonController::class,'edit'])->name('teacher.l
 Route::put('update/lesson/{id}',[LessonController::class,'update'])->name('teacher.lesson.update');
 Route::delete('/delete/lesson/{id}',[TeacherController::class,'delete'])->name('teacher.lesson.delete');
 Route::get('create/test/{id}',[TestController::class,'create'])->name('teacher.create.test');
+Route::post('store/test/{id}',[TestController::class,"store"])->name('teacher.store.test');
 
 });
 Route::middleware('auth')->group(function (){

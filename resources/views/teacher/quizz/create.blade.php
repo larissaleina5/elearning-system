@@ -13,7 +13,7 @@
                         <h5 class="mb-0">Lesson Quizz</h5>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('teacher.lesson.store',$id) }}" method="post" enctype="multipart/form-data">
+                        <form action="{{route('teacher.store.test',$id) }}" method="post" enctype="multipart/form-data">
                             @csrf
 
                             <div class="row">

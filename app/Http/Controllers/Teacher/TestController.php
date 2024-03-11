@@ -25,6 +25,7 @@ class TestController extends Controller
                 $proposition->proposition_name=$i;
                 $isGoodOrFalse=$request->isGoodOrFalse[$index];
                 $proposition->save();
+                $question->propositions()->attach($proposition,['isGoodOrFalse'=>$isGoodOrFalse]);
             }
         }
     }
