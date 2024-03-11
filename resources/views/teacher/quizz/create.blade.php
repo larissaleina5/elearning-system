@@ -73,10 +73,58 @@
 
                                 </div>
 
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">Proposition<span class="required">*</span></label>
+                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="propositions[]" id="exampleFormControlInput1">
 
+
+
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">IsGoodOrFalse<span class="required">*</span></label>
+                                    <select class="form-control" style="width:100%; height:50px; font-size:20px" name="isGoodOrFalse[]" id="">
+                                        <option value="1">True</option>
+                                        <option value="0">False</option>
+                                    </select>
+
+
+
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">Proposition<span class="required">*</span></label>
+                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="propositions[]" id="exampleFormControlInput1">
+
+
+
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">IsGoodOrFalse<span class="required">*</span></label>
+                                    <select class="form-control" style="width:100%; height:50px; font-size:20px" name="isGoodOrFalse[]" id="">
+                                        <option value="1">True</option>
+                                        <option value="0">False</option>
+                                    </select>
+
+
+
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">Proposition<span class="required">*</span></label>
+                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="propositions[]" id="exampleFormControlInput1">
+
+
+
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">IsGoodOrFalse<span class="required">*</span></label>
+                                    <select class="form-control" style="width:100%; height:50px; font-size:20px" name="isGoodOrFalse[]" id="">
+                                        <option value="1">True</option>
+                                        <option value="0">False</option>
+                                    </select>
+
+
+
+                                </div>
                             </div>
-
-                            <button type="button" onclick="addTest()" class="btn bag-primary text-white" style="background-color: #c70609">Add Proposition Test</button>
                         </div>
 
 
@@ -92,7 +140,7 @@
     </div>
 </div>
 @endsection
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
 
 <script>
 

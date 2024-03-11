@@ -14,7 +14,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('question_propositions', function (Blueprint $table) {
+        Schema::create('proposition_question', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Question::class)
             ->constrained()
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('question_propositions');
+        Schema::dropIfExists('proposition_question');
     }
 };
