@@ -22,7 +22,7 @@
                       </li>
                       <li class="has-dropdown"><a href="{{ route('front.courses') }}">courses</a>
                         <ul class="main-dropdown">
-                        <li><a href="{{route('front.courses')}}">Course</a></li>
+                    <li><a href="{{route('front.courses')}}">Course</a></li>
                         <li><a href="course-2.html">Course v2</a></li>
                         <li><a href="#">Course Details</a></li>
                         </ul>
