@@ -74,6 +74,7 @@ Route::put('update/lesson/{id}',[LessonController::class,'update'])->name('teach
 Route::delete('/delete/lesson/{id}',[TeacherController::class,'delete'])->name('teacher.lesson.delete');
 Route::get('create/test/{id}',[TestController::class,'create'])->name('teacher.create.test');
 Route::post('store/test/{id}',[TestController::class,"store"])->name('teacher.store.test');
+Route::get('list/test/{id}',[TestController::class,'index'])->name('teacher.list.tests');
 
 });
 Route::middleware('auth')->group(function (){
