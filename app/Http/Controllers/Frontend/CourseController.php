@@ -17,7 +17,7 @@ class CourseController extends Controller
         return view('pages.courses.index',compact('courses','users','categories'));
     }
     public function details($name){
-        $course=Course::where('course_name',$name)->first();
+        $course=Course::where('slug',$name)->first();
         $categories=Category::all();
         return view('pages.courses.course-details',compact('course','categories'));
     }

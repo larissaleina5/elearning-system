@@ -277,7 +277,7 @@ List of courses
                             @foreach($courses as $course)
                                 <div class="">
                                 <div class="">
-                                    <a href="{{ route('details.course',$course->course_name) }}"> <img   style="width:250px" src="{{ Storage::url($course->course_profile) }}" alt="Image"/></a>
+                                    <a href="{{ route('details.course',$course->slug) }}"> <img   style="width:250px" src="{{ Storage::url($course->course_profile) }}" alt="Image"/></a>
                                     <span class="course__priceTitle">Free</span>
                                 </div>
                                 <div class="course__content-4">
