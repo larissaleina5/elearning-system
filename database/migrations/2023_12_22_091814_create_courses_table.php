@@ -22,6 +22,7 @@ return new class extends Migration
             ->constrained()
             ->restrictOnUpdate()
             ->restrictOnDelete();
+            $table->string('slug');
             $table->foreignIdFor(Category::class)
             ->constrained()
             ->restrictOnUpdate()

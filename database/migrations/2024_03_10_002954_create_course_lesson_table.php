@@ -1,8 +1,7 @@
 <?php
 
-use App\Models\Proposition;
-use App\Models\Question;
-use App\Models\Quiz;
+use App\Models\Course;
+use App\Models\Lesson;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,17 +13,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('question_propositions', function (Blueprint $table) {
+        Schema::create('course_lesson', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Question::class)
+            $table->foreignIdFor(Lesson::class)
             ->constrained()
             ->cascadeOnUpdate()
             ->cascadeOnDelete();
-            $table->foreignIdFor(Proposition::class)
+            $table->foreignIdFor(Course::class)
             ->constrained()
             ->cascadeOnUpdate()
             ->cascadeOnDelete();
-            $table->boolean('isGoodOrFalse');
             $table->timestamps();
         });
     }
@@ -34,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('question_propositions');
+        Schema::dropIfExists('course_lesson');
     }
 };

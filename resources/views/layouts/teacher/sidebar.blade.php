@@ -11,14 +11,14 @@
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-symbols-outlined">school</i>
-                    <span class="nav-text">Lecturer</span>
+                    <span class="nav-text">Courses</span>
                 </a>
                 <ul aria-expanded="false">
                     <li>
-                        <a href="{{ route('students') }}">List of Course  </a>
+                        <a href="{{ route('teach.courses') }}">List Of Courses</a>
                     </li>
                     <li>
-                        <a href="{{ route('add-student') }}">Create lesson</a>
+                        <a href="{{ route('teach.createcourse') }}">Create Courses</a>
                     </li>
 
                 </ul>

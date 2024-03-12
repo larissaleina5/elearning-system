@@ -12,9 +12,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('questions', function (Blueprint $table) {
+        Schema::create('chapters', function (Blueprint $table) {
             $table->id();
-            $table->string('question_name');
+            $table->string('chapter_title');
             $table->foreignIdFor(Lesson::class)
             ->constrained()
             ->restrictOnUpdate()
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('questions');
+        Schema::dropIfExists('chapters');
     }
 };

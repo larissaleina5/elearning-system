@@ -16,8 +16,10 @@ use App\Http\Controllers\EnliststudentController;
 use App\Http\Controllers\Teacher\CourseController;
 use App\Http\Controllers\Teacher\LessonController;
 use App\Http\Controllers\Frontend\CourseController as FrontendCourseController;
+use App\Http\Controllers\Frontend\LessonController as FrontendLessonController;
 use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
 use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardController;
+use App\Http\Controllers\Teacher\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +35,9 @@ use App\Http\Controllers\Teacher\DashboardController as TeacherDashboardControll
 
 Route::get('user/{id}',[StudentController::class,'show']);
 Route::get('/all/courses',[FrontendCourseController::class,'index'])->name('front.courses');
-Route::get('details/courses/{id}',[FrontendCourseController::class,'details'])->name('details.course');
+Route::get('details/courses/{name}',[FrontendCourseController::class,'details'])->name('details.course');
+Route::get('lesson/{course_name}/{lesson_name}',[FrontendLessonController::class,'show'])->name('details.lesson');
+Route::get('view/test/{id}',[FrontendCourseController::class,'quiz'])->name('font.test');
 
 
 
@@ -64,12 +68,16 @@ Route::get('/teacher/courses',[CourseController::class,'list'])->name('teach.cou
 Route::get('/teacher/course/create',[CourseController::class,'create'])->name('teach.createcourse');
 Route::post('/teacher/course/add',[CourseController::class,'store'])->name('teach.createstore');
 
-Route::get('lesson/create/{id}',[LessonController::class,'create'])->name('teacher.create.lessons');
+Route::get('create/lesson/{id}',[LessonController::class,'create'])->name('teacher.create.lessons');
 Route::post('lesson/create/{id}',[LessonController::class,'store'])->name('teacher.lesson.store');
-Route::get('lesson/list',[LessonController::class,'list'])->name('teacher.lessons.listlesson');
+Route::get('/list/lesson/{id}',[LessonController::class,'list'])->name('teacher.lessons.listlesson');
 Route::get('lesson/edit/{id}',[LessonController::class,'edit'])->name('teacher.lesson.edit');
 Route::put('update/lesson/{id}',[LessonController::class,'update'])->name('teacher.lesson.update');
 Route::delete('/delete/lesson/{id}',[TeacherController::class,'delete'])->name('teacher.lesson.delete');
+Route::get('create/test/{id}',[TestController::class,'create'])->name('teacher.create.test');
+Route::post('store/test/{id}',[TestController::class,"store"])->name('teacher.store.test');
+Route::get('list/test/{id}',[TestController::class,'index'])->name('teacher.list.tests');
+
 
 });
 Route::middleware('auth')->group(function (){

@@ -98,7 +98,8 @@ List of Courses
                                                     @method('DELETE')
 
                                                 </form>
-                                                <a class="btn btn-primary" href="{{ route('teacher.create.lessons',$course->id) }}">Crearte Lesson</a>
+                                                <a class="btn btn-primary" href="{{ route('teacher.create.lessons',$course->id) }}">Create Lesson</a>
+                                                <a class="btn btn-primary" style="margin-left: 12px" href="{{ route('teacher.lessons.listlesson',$course->id) }}">All Lessons</a>
                                             </div>
                                         </td>
 

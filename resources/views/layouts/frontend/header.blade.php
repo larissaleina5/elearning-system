@@ -15,67 +15,59 @@
                 <div class="header__menu">
                   <div class="main-menu-2">
                     <ul>
-                      <li class="has-dropdown"><a href="#">Dashboard</a>
-                        <ul class="main-dropdown">
-                          <li><a href="{{ route('admin.dashboard')}}">Dashboard</a></li>
-                        </ul>
-                      </li>
+                        @if(auth()->user())
+                            @if(auth()->user()->role_id===1)
+                                <li><a href="{{ route('admin.dashboard')}}">Dashboard</a>
+
+                                </li>
+                            @endif
+                            @if(auth()->user()->role_id==3)
+                                <li><a href="{{ route('teacher.dashboard')}}">Dashboard</a>
+
+                                </li>
+                            @endif
+
+                        @endif
+
                       <li class="has-dropdown"><a href="{{ route('front.courses') }}">courses</a>
                         <ul class="main-dropdown">
+<<<<<<< HEAD
                     <li><a href="{{route('front.courses')}}">Course</a></li>
                         <li><a href="course-2.html">Course v2</a></li>
                         <li><a href="#">Course Details</a></li>
+=======
+                        <li><a href="{{route('front.courses')}}">Courses</a></li>
+                        <li><a href="#">Course Categories</a></li>
+>>>>>>> 18c4549476b18f729396469fb00029c028871cfc
                         </ul>
                       </li>
-                      <li><a href="about.html">About</a>
                       </li>
-                      <li class="has-dropdown"><a href="#">pages</a>
+                      <li class="has-dropdown"><a href="#">Categories</a>
                         <ul class="main-dropdown">
-                          <li><a href="course.html">Course</a></li>
-                          <li><a href="course-2.html">Course v2</a></li>
-                          <li><a href="course-details.html">Course Details</a></li>
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="blog-listing.html">Blog v.2</a></li>
-                          <li><a href="blog-details.html">Blog Details</a></li>
-                          <li><a href="shop.html">Shop</a></li>
-                          <li><a href="product-details.html">Shop Details</a></li>
-                          <li><a href="team.html">team</a></li>
-                          <li><a href="faq.html">Faq</a></li>
-                          <li><a href="contact.html">contact</a></li>
-                          <li><a href="gallary.html">Gallary</a></li>
-                          <li><a href="404.html">404</a></li>
+                            @foreach ($categories as $category)
+                            <li><a href="course.html">{{ $category->category_name }}</a></li>
+                            @endforeach
+
                         </ul>
                       </li>
-                      <li><a href="{{route('login')}}">login</a>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="header__other">
-                  <div class="header__lang header__lang-2">
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true"><i class="fa-solid fa-globe"></i>Eng</button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Eng</a></li>
-                        <li><a class="dropdown-item" href="#">France</a></li>
-                        <li><a class="dropdown-item" href="#">spanish</a></li>
-                        <li><a class="dropdown-item" href="#">German</a></li>
-                        <li><a class="dropdown-item" href="#">Poland</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="header__cart header__cart-2">
-                    <button class="cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-                  </div>
+
+
                   <div class="header__search">
                     <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <button class="search-close"><i class="fa-solid fa-xmark"></i></button>
                   </div>
-                  <div class="header__btn">
-                    <a href="#" class="btn-ractangle">Join Now</a>
-                  </div>
+
+                  @if(empty(auth()->user()))
+                    <div class="header__btn">
+                        <a href="{{ route('login') }}" class="btn-ractangle">Login</a>
+                    </div>
+                  @endif
+
                   <div class="mobile__menu">
                     <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
                   </div>

@@ -17,12 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('lesson_title');
             $table->text('lesson_content');
-            $table->text('lesson_description');
-            $table->string('lesson_type')->default('text');
             $table->foreignIdFor(Course::class)
             ->constrained()
             ->restrictOnUpdate()
             ->restrictOnDelete();
+            $table->string('lesson_video');
+            $table->string('slug');
             $table->timestamps();
         });
     }
