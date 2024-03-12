@@ -37,8 +37,8 @@ Route::get('user/{id}',[StudentController::class,'show']);
 Route::get('/all/courses',[FrontendCourseController::class,'index'])->name('front.courses');
 Route::get('details/courses/{name}',[FrontendCourseController::class,'details'])->name('details.course');
 Route::get('lesson/{course_name}/{lesson_name}',[FrontendLessonController::class,'show'])->name('details.lesson');
-Route::get('view/test/{id}',[FrontendCourseController::class,'quiz'])->name('font.test');
-
+Route::get('view/test/{id}',[FrontendCourseController::class,'quiz'])->name('view.test');
+Route::post('view/test',[FrontendCourseController::class,'store'])->name('store.quiz');
 
 
     Route::middleware("admin",'auth')->group(function(){

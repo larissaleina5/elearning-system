@@ -23,23 +23,33 @@ MAKE A TEST
 
 
       <section class=" container font-bold mt-5" style="margin-top:260px">
+        @if (isset($result))
+        <div style="display: flex;justify-content:center;align-items:center">
+            <span class="text-danger" style="font-size: 20px">{{ $result[0] }}/5</span>
+        </div>
 
+        @endif
         <section>
-            <form action="" method="get">
+            <form action="{{ route('store.quiz') }}"method="post">
+                @csrf
             @foreach ($quizzes as $quiz)
+
             <h5 class="fs-5 fw-bold mt-5">{{ $quiz->question_name }}</h5>
+
 
             <div class="row">
                 @foreach ($quiz->propositions as $proposition)
+
                 <div class="col-6 form-check">
 
                     <div class="col-6 form-check">
 
 
-
-                        <input name="propositions[]" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input type="hidden" name="lesson_id" value="{{ $id }}">
+                        <input value="{{ $proposition->proposition_name }}" name="propositions[]" class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
                         {{ $proposition->proposition_name }}
+
                         </label>
                     </div>
 
@@ -47,9 +57,12 @@ MAKE A TEST
             </div>
             @endforeach
             @endforeach
+            @if (empty($result))
             <div style="display: flex;justify-content:center" class="d-flex items-center justify-center">
                 <button class=" w-10 btn btn-primary mb-5 mt-5" type="submit">Sending Test</button>
             </div>
+            @endif
+
 
         </form>
         </section>
