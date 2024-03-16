@@ -1,6 +1,6 @@
 @extends('layouts.frontend.main')
 @section('title')
-MAKE A TEST
+Result Test
 @endsection
 @section('content')
 
@@ -23,7 +23,12 @@ MAKE A TEST
 
 
       <section class=" container font-bold mt-5" style="margin-top:260px">
+        @if (isset($result))
+        <div style="display: flex;justify-content:center;align-items:center">
+            <span class="text-danger" style="font-size: 20px">{{ $result[0] }}/5</span>
+        </div>
 
+        @endif
         <section>
             <form action="{{ route('store.quiz') }}"method="post">
                 @csrf
@@ -33,7 +38,7 @@ MAKE A TEST
 
 
             <div class="row">
-                @foreach ($quiz->propositions as $proposition)
+                @foreach ($quiz->propositions as $index=>$proposition)
 
                 <div class="col-6 form-check">
 
@@ -41,21 +46,19 @@ MAKE A TEST
 
 
                         <input type="hidden" name="lesson_id" value="{{ $id }}">
-                        <input value="{{ $proposition->proposition_name }}" name="propositions[]" class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                        {{ $proposition->proposition_name }}
+                        @if($quiz->propositions[$index]->pivot->isGoodOrFalse===1)
+                        <span class="text-danger">{{ $proposition->proposition_name }}</span>
+                        @endif
+                        @if($quiz->propositions[$index]->pivot->isGoodOrFalse!==1)
+                        <span class="" style="text-decoration:line-through">{{ $proposition->proposition_name }}</span>
+                        @endif
 
-                        </label>
                     </div>
 
 
             </div>
             @endforeach
             @endforeach
-
-            <div style="display: flex;justify-content:center" class="d-flex items-center justify-center">
-                <button class=" w-10 btn btn-primary mb-5 mt-5" type="submit">Sending Test</button>
-            </div>
 
 
 

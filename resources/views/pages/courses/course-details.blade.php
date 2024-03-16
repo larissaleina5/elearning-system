@@ -115,21 +115,7 @@
 
 
                   </div>
-                  <div class="cmt__form">
-                    <div class="thumb">
-                      <img src="{{ asset('assets/imgs/inner/cmt1.png') }}" alt="thumb" style="border-radius:100%;width:200px;height:200px;object-fit:cover;">
-                    </div>
-                    <div class="content">
-                      <h3>Cameron Williamson</h3>
-                      <span class="v-post">Visitsite: Itech-themes</span>
-                      <p class="dis">Self-reflection requires courage and patience. Teaching students to be self- them a skill that will help them throughout their lives.</p>
-                      <ul class="course__authorsocial pt-0 justify-content-start">
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
+
                   <h2 class="course__feedbacktitle">Student Feedback</h2>
                   <div class="course__ratingbox">
                     <div class="course__ratingboxleft">

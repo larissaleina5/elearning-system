@@ -70,7 +70,10 @@
 
 
                   </div>
+                  <div class="d-flex justify-content-center align-items-center">
 
+                    <a href="{{ route('view.test',$lesson->id) }}" class="btn btn-danger mt-5 ">Start Quizz</button></a>
+                  </div>
 
 
 

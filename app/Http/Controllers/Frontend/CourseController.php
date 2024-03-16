@@ -63,7 +63,14 @@ class CourseController extends Controller
             }
         }
         Session::push('result',$i);
-            return to_route('view.test',$request->lesson_id);
+            return to_route('result.test',$request->lesson_id);
+    }
+
+    public function result($id){
+        $result=Session::get('result');
+        $categories=Category::all();
+        $quizzes=Question::where('lesson_id',$id)->get();
+        return view('pages.result.test',compact('quizzes',"result",'id','categories'));
     }
 
 }
