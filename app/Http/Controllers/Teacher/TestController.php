@@ -35,5 +35,7 @@ class TestController extends Controller
                 $question->propositions()->attach($proposition,['isGoodOrFalse'=>$isGoodOrFalse]);
             }
         }
+
+        return to_route('teacher.list.tests',$request->lesson_id);
     }
 }
