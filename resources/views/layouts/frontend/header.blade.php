@@ -31,14 +31,10 @@
 
                       <li class="has-dropdown"><a href="{{ route('front.courses') }}">courses</a>
                         <ul class="main-dropdown">
-<<<<<<< HEAD
-                    <li><a href="{{route('front.courses')}}">Course</a></li>
-                        <li><a href="course-2.html">Course v2</a></li>
-                        <li><a href="#">Course Details</a></li>
-=======
+
                         <li><a href="{{route('front.courses')}}">Courses</a></li>
                         <li><a href="#">Course Categories</a></li>
->>>>>>> 18c4549476b18f729396469fb00029c028871cfc
+
                         </ul>
                       </li>
                       </li>

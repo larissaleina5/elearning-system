@@ -31,7 +31,7 @@ List of Test
                                     <option value="2">Recent</option>
                                 </select>
                                 <!-- Button trigger modal -->
-                                <a class="btn btn-primary" href="{{ route('teacher.create.lessons',$id) }}">+ New Lesson
+                                <a class="btn btn-primary" href="{{ route('teacher.create.test',$id) }}">+ New Quizz
                                 </a>
                             </div>
                         </div>
