@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Lesson;
 use App\Models\Quiz;
 use Illuminate\Support\Facades\Session;
 
@@ -70,7 +71,9 @@ class CourseController extends Controller
         $result=Session::get('result');
         $categories=Category::all();
         $quizzes=Question::where('lesson_id',$id)->get();
-        return view('pages.result.test',compact('quizzes',"result",'id','categories'));
+        $lesson=Lesson::where('id',$id)->first();
+        $course=Course::find($lesson->course_id);
+        return view('pages.result.test',compact('quizzes',"result",'id','categories','course'));
     }
 
 }

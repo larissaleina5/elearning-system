@@ -63,6 +63,14 @@ Result Test
 
 
         </form>
+        <div class="mt-5 mb-5 flex justify-content-center align-items-center">
+            @if($id+1>count($course->lessons))
+            <p>Course finish</p>
+            @else
+            <a href="{{ route('details.lesson',['course_name'=>$course->slug,'lesson_name'=>$course->lessons[$id]['slug']]) }}" class="btn btn-danger">Next Lesson</a>
+            @endif
+
+        </div>
         </section>
 
 
