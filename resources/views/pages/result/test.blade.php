@@ -23,12 +23,14 @@ Result Test
 
 
       <section class=" container font-bold mt-5" style="margin-top:260px">
-        @if (isset($result))
-        <div style="display: flex;justify-content:center;align-items:center">
-            <span class="text-danger" style="font-size: 20px">{{ $result[0] }}/5</span>
+
+        <div style="display: flex;justify-content:center;align-items:center;flex-direction:column">
+            <span>Nom:</span><h2>{{ Auth::user()->name }}</h2>
+            <span>Email:</span><h2>{{ Auth::user()->email}}</h2>
+            <span class="text-danger" style="font-size: 20px">Resultat:{{ $result->score }}/5</span>
         </div>
 
-        @endif
+
         <section>
             <form action="{{ route('store.quiz') }}"method="post">
                 @csrf

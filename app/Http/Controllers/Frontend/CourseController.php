@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Lesson;
 use App\Models\Quiz;
+use App\Models\Result;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 class CourseController extends Controller
@@ -63,17 +65,28 @@ class CourseController extends Controller
                 $i=$i+1;
             }
         }
-        Session::push('result',$i);
+        $resultExist=Result::where('lesson_id',$request->lesson_id)->where('user_id',Auth::user()->id)->first();
+
+        if(empty($resultExist)){
+            $result=new Result;
+            $result->score=$i;
+            $result->lesson_id=$request->lesson_id;
+            $result->user_id=Auth::user()->id;
+            $result->save();
+        }
+
+
             return to_route('result.test',$request->lesson_id);
     }
 
     public function result($id){
         $result=Session::get('result');
+        $result=Result::where('lesson_id',$id)->where('user_id',Auth()->user()->id)->first();
         $categories=Category::all();
         $quizzes=Question::where('lesson_id',$id)->get();
         $lesson=Lesson::where('id',$id)->first();
         $course=Course::find($lesson->course_id);
-        return view('pages.result.test',compact('quizzes',"result",'id','categories','course'));
+        return view('pages.result.test',compact('quizzes',"result",'id','categories','course','result'));
     }
 
 }

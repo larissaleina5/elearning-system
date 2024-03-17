@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('results', function (Blueprint $table) {
             $table->id();
             $table->integer('score');
-            $table->integer('time');
             $table->foreignIdFor(Lesson::class)
             ->constrained()
             ->restrictOnUpdate()

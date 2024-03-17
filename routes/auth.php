@@ -11,6 +11,7 @@ use App\Http\Controllers\Auth\ConfirmablePasswordController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
+use App\Http\Controllers\Frontend\CourseController;
 
 Route::middleware('guest')->group(function () {
     Route::get('register', [RegisteredUserController::class, 'create'])
@@ -56,4 +57,7 @@ Route::middleware('auth')->group(function () {
 
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
+                Route::get('view/test/{id}',[CourseController::class,'quiz'])->name('view.test');
+Route::get('result/test/{id}',[CourseController::class,'result'])->name('result.test');
+Route::post('view/test',[CourseController::class,'store'])->name('store.quiz');
 });
