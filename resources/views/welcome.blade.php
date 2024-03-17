@@ -21,7 +21,7 @@ Homepage
                 restore convergence before
                 real-time partnerships.</p>
               <div class="btns">
-                <a href="about.html" class="btn-ractangle-2" data-aos="flip-left" data-aos-delay="600">Explore More <img
+                <a href="{{ route('front.courses') }}" class="btn-ractangle-2" data-aos="flip-left" data-aos-delay="600">Courses<img
                     src="{{ asset('assets/imgs/home-1/arrow.png') }}" alt=""></a>
                 <a href="about.html" class="btn-border" data-aos="flip-left" data-aos-delay="700">Explore More <img
                     src="{{ asset('assets/imgs/home-1/arrow.png') }}" alt=""></a>
@@ -169,7 +169,7 @@ Homepage
             </div>
         </div>
         @endforeach
-        
+
         <div class="mt-5 text-center">
             <a href="{{ route('front.courses') }}" class="btn-ractangle-2 hover-class">Other Course <img
                 src="{{ asset('assets/imgs/home-1/arrow.png') }}" class="hover-class" alt=""></a>
@@ -739,7 +739,7 @@ Homepage
                 <a href="blog-details.html">
                   <h4 class="blog__title">Education Geometry New Ranking Strong Year-2023</h4>
                 </a>
-                <a href="" class="btn-readmore">Explore More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="{{ route('front.courses') }}" class="btn-readmore">Explore More <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </article>
           </div>

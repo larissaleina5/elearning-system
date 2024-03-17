@@ -30,13 +30,16 @@ public function store(Request $request, $id){
         $lesson->lesson_video=$video_path;
     $lesson->save();
 
-    /**f(isset($request->chapter)){
+    if(isset($request->chapter)){
         foreach($request->chapters as $chapter){
-            $chapter=new Chapter;
-            $chapter->lesson_id=$chapter->chapter_title;
-            $chapter->save();
+            if($chapter!=null){
+                $chapter=new Chapter;
+                $chapter->lesson_id=$chapter->chapter_title;
+                $chapter->save();
+            }
+
         }
-    }*/
+    }
 
 
     return to_route('teacher.lessons.listlesson',$id);

@@ -50,11 +50,7 @@
 
                     <div class="col-xl-12 col-sm-12">
 
-                            <div class="mb-2">
-                                <i class="fas fa-file"></i>
 
-                                <input class="form-control" type="file" name="lesson_video" required>
-                            </div>
 
                             <div id="quill-editor" class="mb-3 " style="height: 300px;"></div>
                             <textarea rows="3" class="mb-3 mt-3 d-none" name="lesson_content" id="quill-editor-area"></textarea>
@@ -68,7 +64,20 @@
 
                                 </div>
 
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">Lesson Chapter<span class="required">*</span></label>
+                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
 
+
+
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="exampleFormControlInput1" class="form-label text-primary">Lesson Chapter<span class="required">*</span></label>
+                                                    <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
+
+
+
+                                </div>
 
                             </div>
 
@@ -111,12 +120,17 @@
     function addIngredient() {
         i = i + 1;
         const newDiv = document.createElement(`div`);
-        newDiv.setAttribute('class', `col-6`);
+        newDiv.setAttribute('class', `row`);
         const div = document.getElementById('form');
         newDiv.innerHTML = `
 
+
             <label for="exampleFormControlInput1" class="form-label text-primary">Lesson Chapter<span class="required">*</span></label>
                             <input type="text"  style="width:100%; height:50px; font-size:20px" class="form-control" name="chapter[]" id="exampleFormControlInput1">
+
+
+
+
 
 
 
