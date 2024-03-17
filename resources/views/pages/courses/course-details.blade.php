@@ -100,12 +100,11 @@
                         <div id="flush-collapse{{ $index }}" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">
                             <ul class="course__lecturelist">
-                              <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture 1.1 </span><span class="lecture">UI UX Fundamental & Figma Intro</span></li>
-                              <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture 1.2 </span><span class="lecture">Assignment 1 (UI UX Fundamental & Figma)</span></li>
-                              <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture 1.3 </span><span class="lecture">Human Centred Design & Figma basic</span></li>
-                              <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture 1.4 </span><span class="lecture">Module 1 Quiz</span></li>
-                              <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture 1.5 </span><span class="lecture">Assignment 2 (UI UX Fundamental & Figma )</span></li>
-                              <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture 1.6 </span><span class="lecture">Module 1 live Test</span></li>
+                                @forelse ($lesson->chapters as $index=>$chapter)
+                                    <li><span><img src="{{ asset('assets/imgs/inner/icon-4.png') }}" alt="icon"> Lecture {{ $index }}  {{ $chapter->chapter_title }}</span><span class="lecture">UI UX Fundamental & Figma Intro</span></li>
+                                @empty
+                                    <li class="text-center text-danger">empty chapters</li>
+                                    @endforelse
                             </ul>
                           </div>
                         </div>
