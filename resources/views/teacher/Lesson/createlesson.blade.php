@@ -50,7 +50,13 @@
 
                     <div class="col-xl-12 col-sm-12">
 
-
+ <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label text-primary">Lesson video<span class="required">*</span></label>
+                                                <input type="file" required  class="form-control" name="lesson_video" id="exampleFormControlInput1">
+                                                @error('lesson_video')
+                                                        <p class="text-danger">{{ $message }}</p>
+                                                @enderror
+                                            </div>
 
                             <div id="quill-editor" class="mb-3 " style="height: 300px;"></div>
                             <textarea rows="3" class="mb-3 mt-3 d-none" name="lesson_content" id="quill-editor-area"></textarea>
