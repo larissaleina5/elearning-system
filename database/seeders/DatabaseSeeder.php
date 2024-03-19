@@ -30,17 +30,5 @@ class DatabaseSeeder extends Seeder
         DB::unprepared(file_get_contents($path));
         $this->command->info('lesson table seeded!');
 
-        $path2 = 'database/sql_files/questions.sql';
-        DB::unprepared(file_get_contents($path2));
-        $this->command->info('questions table seeded!');
-
-        $path3 = 'database/sql_files/propositions.sql';
-        DB::unprepared(file_get_contents($path3));
-        $this->command->info('proposition table seeded!');
-
-
-        $path4 = 'database/sql_files/proposition_question.sql';
-        DB::unprepared(file_get_contents($path4));
-        $this->command->info('proposition_question table seeded!');
 }
 }
