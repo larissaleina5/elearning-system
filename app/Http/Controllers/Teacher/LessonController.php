@@ -31,7 +31,7 @@ public function store(Request $request, $id){
     $lesson->save();
 
     if(isset($request->chapter)){
-        foreach($request->chapters as $chapter){
+        foreach($request->chapter as $chapter){
             if($chapter!=null){
                 $chapter=new Chapter;
                 $chapter->lesson_id=$chapter->chapter_title;

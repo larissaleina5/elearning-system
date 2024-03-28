@@ -39,9 +39,23 @@ class UserSeeder extends Seeder
                         "profile"=>'assets/imgs/home-1/profile.png',
                         'role_id'=>3
                                 ]);
+
+                                User::create([
+                                    'name'=>'lucia',
+                                    'email'=>'lucia@gmail.com',
+                                    'password'=>Hash::make('lucia2364'),
+                                    'phone'=>671107454,
+                                    "profile"=>'assets/imgs/home-1/profile.png',
+                                    'role_id'=>2
+                                            ]);
                 }
 
-    }
+
+            }
+
+
+
+    
 
 
 

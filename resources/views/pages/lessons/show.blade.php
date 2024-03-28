@@ -10,7 +10,7 @@
     <img class="shape-2" src="{{ asset('assets/imgs/inner/bradcrumb-shape-2.png') }}" alt="shape-1">
     <img class="shape-3"  src="{{ asset('assets/imgs/inner/dotted-1.png') }}" alt="shape-1">
     <div class="container">
-      <h2 class="breadcrumb__title">Courses Details</h2>
+      <h2 class="breadcrumb__title">lesson Details</h2>
       <ul class="breadcrumb__menu">
         <li><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i></li>
         <li><a href="#">Page</a><i class="fa-solid fa-chevron-right"></i></li>
@@ -29,13 +29,14 @@
 
 
 
-                  <div class="course__detailsThumb">
-                    <video controls>
+                  <div class="course__detailsThumb container">
+                    <video style="width:90vw" controls>
                         <source src="{{ Storage::url($lesson->lesson_video) }}" type="video/mp4" />
                         <p>
                           Votre navigateur ne prend pas en charge les vidéos HTML5. Voici
                           <a href="myVideo.mp4">un lien pour télécharger la vidéo</a>.
                         </p>
+
                       </video>
 
                     <div class="course__detailsInfo">
@@ -78,47 +79,7 @@
 
 
               </div>
-              <div class="course__detailsRight">
-                <div class="course__video">
-                  <div class="course__videooverview">
-                    <img src="{{ Storage::url($course->course_profile) }}" alt="playicon">
-                    <a class="blog__detailvideoicon video-link" href="https://youtu.be/pNje3bWz7V8"><i class="fa-solid fa-play"></i></a>
-                  </div>
-                  <p class="course__pricing">{{ $course->course_name }}</p>
-                  <ul class="coursetwo__list">
-                    <li>{{ count($course->lessons) }} lessons</li>
-                    <li>Quizzes 1</li>
-                    <li>Duration 10 weeks</li>
-                    <li>Skill level All levels</li>
-                    <li>Language English</li>
-                    <li>Students 340</li>
-                    <li>Assessments Yes</li>
-                  </ul>
-                  <button class="course__btnenroll">Enroll Now</button>
-                  <button class="course__addtocart">Add to Cart</button>
-                  <span class="course__gtitle">30 Day Money Back Gurantee</span>
-                </div>
-                <div class="course__recentPost">
-                  <div class="course__recentPost">
-                    <h3>Recent Courses</h3>
-                  </div>
-                  <div class="course__recent">
 
-                        <div class="course__recentItem">
-                        <div class="course__recentLeft">
-                          <img src="{{ asset('assets/imgs/inner-2/thumb/recent-1.png') }}" alt="Image">
-                        </div>
-                        <div class="course__recentRight">
-                          <a href="course.html">Learn Figma to Cms Beginner to Advanced</a>
-                          <span>$80.00</span>
-                        </div>
-                        </div>
-
-
-
-                  </div>
-                </div>
-            </div>
           </div>
           <div class="course__related">
             <div class="course__related-header">
