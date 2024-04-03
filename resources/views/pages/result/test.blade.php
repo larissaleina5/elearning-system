@@ -66,11 +66,18 @@ Result Test
 
         </form>
         <div class="mt-5 mb-5 flex justify-content-center align-items-center">
-            @if($id+1>count($course->lessons))
-            <p>Course finish</p>
-            @else
-            <a href="{{ route('details.lesson',['course_name'=>$course->slug,'lesson_name'=>$course->lessons[$id]['slug']]) }}" class="btn btn-danger">Next Lesson</a>
-            @endif
+            @foreach ($course->lessons as $index=>$lesson)
+                @if($lesson->id==$id && $index!=count($course->lessons ) - 1)
+                <a href="{{ route('details.lesson',['course_name'=>$course->slug,'lesson_name'=>$course->lessons[$index+1]['slug']]) }}" class="btn btn-danger">Next Lesson</a>
+
+
+                @endif
+
+                @if($id==$course->lessons[count($course->lessons ) - 1]->id)
+                <p>Course finish</p>
+                @endif
+            @endforeach
+
 
         </div>
         </section>
